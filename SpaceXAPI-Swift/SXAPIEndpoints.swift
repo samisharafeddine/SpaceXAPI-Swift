@@ -89,4 +89,30 @@ class SXAPIEndpoints: NSObject {
         return url + "/landpads" + "/\(id)"
     }
     
+    // MARK: - Launches
+    
+    static func getAllLaunches () -> String {
+        return url + "/launches"
+    }
+    
+    static func getLaunch (flightNumber: Int) -> String {
+        return url + "/launches" + "/\(flightNumber)"
+    }
+    
+    static func getAllPastLaunches () -> String {
+        return url + "/launches/past"
+    }
+    
+    static func getAllUpcomingLaunches () -> String {
+        return url + "/launches/upcoming"
+    }
+    
+    static func getLatestLaunch () -> String {
+        return url + "/launches/latest"
+    }
+    
+    static func getNextLaunch () -> String {
+        return url + "/launches/next"
+    }
+    
 }

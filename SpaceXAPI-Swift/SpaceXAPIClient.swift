@@ -201,4 +201,72 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Launches
+    
+    public func getAllLaunches (completion: @escaping ([Launch]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllLaunches()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Launch].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getLaunch (flightNumber: Int, completion: @escaping (Launch?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getLaunch(flightNumber: flightNumber)
+        SXRequestHandler.requestWithUrl(url: url, responseType: Launch.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getAllPastLaunches (completion: @escaping ([Launch]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllPastLaunches()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Launch].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getAllUpcomingLaunches (completion: @escaping ([Launch]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllUpcomingLaunches()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Launch].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getLatestLaunch (completion: @escaping (Launch?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getLatestLaunch()
+        SXRequestHandler.requestWithUrl(url: url, responseType: Launch.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getNextLaunch (completion: @escaping (Launch?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getNextLaunch()
+        SXRequestHandler.requestWithUrl(url: url, responseType: Launch.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }
