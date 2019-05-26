@@ -17,6 +17,8 @@ class SXAPIEndpoints: NSObject {
         super.init()
     }
     
+    // MARK: - Capsules
+    
     static func getAllCapsules () -> String {
         return url + "/capsules"
     }
@@ -33,6 +35,8 @@ class SXAPIEndpoints: NSObject {
         return url + "/capsules/past"
     }
     
+    // MARK: - Cores
+    
     static func getAllCores () -> String {
         return url + "/cores"
     }
@@ -47,6 +51,16 @@ class SXAPIEndpoints: NSObject {
     
     static func getPastCores () -> String {
         return url + "/cores/past"
+    }
+    
+    // MARK: - Dragons
+    
+    static func getAllDragons () -> String {
+        return url + "/dragons"
+    }
+    
+    static func getDragon (id: String) -> String {
+        return url + "/dragons" + "/\(id)"
     }
     
 }

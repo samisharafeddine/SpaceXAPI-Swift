@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21111395229AD80400419C3E /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21111394229AD80400419C3E /* Dragon.swift */; };
+		21111397229AD83100419C3E /* HeatShield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21111396229AD83100419C3E /* HeatShield.swift */; };
+		21111399229AD86900419C3E /* Thruster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21111398229AD86900419C3E /* Thruster.swift */; };
+		2111139B229AD89600419C3E /* PayloadMass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111139A229AD89600419C3E /* PayloadMass.swift */; };
+		2111139D229AD91500419C3E /* PayloadVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111139C229AD91500419C3E /* PayloadVolume.swift */; };
+		2111139F229AD96B00419C3E /* PressurizedCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111139E229AD96B00419C3E /* PressurizedCapsule.swift */; };
+		211113A1229AD9A400419C3E /* Trunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113A0229AD9A400419C3E /* Trunk.swift */; };
+		211113A3229ADA1200419C3E /* HeightWithTrunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113A2229ADA1200419C3E /* HeightWithTrunk.swift */; };
+		211113A5229ADA3A00419C3E /* Diameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113A4229ADA3A00419C3E /* Diameter.swift */; };
+		211113A7229ADA8400419C3E /* Thrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113A6229ADA8400419C3E /* Thrust.swift */; };
+		211113A9229ADAC100419C3E /* Cargo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113A8229ADAC100419C3E /* Cargo.swift */; };
 		21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945821229A36C10093ED68 /* SXAPIEndpoints.swift */; };
 		21945824229A3D9E0093ED68 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945823229A3D9E0093ED68 /* Core.swift */; };
 		21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */; };
@@ -21,6 +32,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21111394229AD80400419C3E /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
+		21111396229AD83100419C3E /* HeatShield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatShield.swift; sourceTree = "<group>"; };
+		21111398229AD86900419C3E /* Thruster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thruster.swift; sourceTree = "<group>"; };
+		2111139A229AD89600419C3E /* PayloadMass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadMass.swift; sourceTree = "<group>"; };
+		2111139C229AD91500419C3E /* PayloadVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadVolume.swift; sourceTree = "<group>"; };
+		2111139E229AD96B00419C3E /* PressurizedCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressurizedCapsule.swift; sourceTree = "<group>"; };
+		211113A0229AD9A400419C3E /* Trunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trunk.swift; sourceTree = "<group>"; };
+		211113A2229ADA1200419C3E /* HeightWithTrunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightWithTrunk.swift; sourceTree = "<group>"; };
+		211113A4229ADA3A00419C3E /* Diameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diameter.swift; sourceTree = "<group>"; };
+		211113A6229ADA8400419C3E /* Thrust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thrust.swift; sourceTree = "<group>"; };
+		211113A8229ADAC100419C3E /* Cargo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cargo.swift; sourceTree = "<group>"; };
 		21945821229A36C10093ED68 /* SXAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXAPIEndpoints.swift; sourceTree = "<group>"; };
 		21945823229A3D9E0093ED68 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
@@ -68,6 +90,17 @@
 				21BB6EC9229A077000C50CDE /* Capsule.swift */,
 				21945823229A3D9E0093ED68 /* Core.swift */,
 				21BB6ECB229A088600C50CDE /* Mission.swift */,
+				21111394229AD80400419C3E /* Dragon.swift */,
+				21111396229AD83100419C3E /* HeatShield.swift */,
+				21111398229AD86900419C3E /* Thruster.swift */,
+				2111139A229AD89600419C3E /* PayloadMass.swift */,
+				2111139C229AD91500419C3E /* PayloadVolume.swift */,
+				2111139E229AD96B00419C3E /* PressurizedCapsule.swift */,
+				211113A0229AD9A400419C3E /* Trunk.swift */,
+				211113A2229ADA1200419C3E /* HeightWithTrunk.swift */,
+				211113A4229ADA3A00419C3E /* Diameter.swift */,
+				211113A6229ADA8400419C3E /* Thrust.swift */,
+				211113A8229ADAC100419C3E /* Cargo.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -238,13 +271,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211113A1229AD9A400419C3E /* Trunk.swift in Sources */,
 				21BB6ECC229A088600C50CDE /* Mission.swift in Sources */,
+				2111139D229AD91500419C3E /* PayloadVolume.swift in Sources */,
 				21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */,
 				21F7FC592299EDD50090B659 /* TestController.swift in Sources */,
+				2111139F229AD96B00419C3E /* PressurizedCapsule.swift in Sources */,
 				21BB6ECA229A077000C50CDE /* Capsule.swift in Sources */,
 				21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */,
+				21111395229AD80400419C3E /* Dragon.swift in Sources */,
+				211113A3229ADA1200419C3E /* HeightWithTrunk.swift in Sources */,
+				21111399229AD86900419C3E /* Thruster.swift in Sources */,
+				211113A7229ADA8400419C3E /* Thrust.swift in Sources */,
+				21111397229AD83100419C3E /* HeatShield.swift in Sources */,
 				21F7FC572299EDD50090B659 /* AppDelegate.swift in Sources */,
+				211113A5229ADA3A00419C3E /* Diameter.swift in Sources */,
 				21945824229A3D9E0093ED68 /* Core.swift in Sources */,
+				2111139B229AD89600419C3E /* PayloadMass.swift in Sources */,
+				211113A9229ADAC100419C3E /* Cargo.swift in Sources */,
 				21BB6EC82299F5BF00C50CDE /* SXRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

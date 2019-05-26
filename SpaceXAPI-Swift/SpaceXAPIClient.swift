@@ -116,4 +116,28 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Dragons
+    
+    public func getAllDragons (completion: @escaping ([Dragon]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllDragons()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Dragon].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getDragon (id: String, completion: @escaping (Dragon?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getDragon(id: id)
+        SXRequestHandler.requestWithUrl(url: url, responseType: Dragon.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }

@@ -17,9 +17,9 @@ class TestController: UIViewController {
     }
     
     func testFunc () {
-        SpaceXAPIClient.shared.getCapsule(capsuleSerial: "C101") { (capsule, error) in
+        SpaceXAPIClient.shared.getAllDragons { (dragons, error) in
             guard error == nil else { return }
-            print(capsule?.details)
+            print(dragons)
         }
     }
 
