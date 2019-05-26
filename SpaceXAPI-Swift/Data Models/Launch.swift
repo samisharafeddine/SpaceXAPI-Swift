@@ -58,7 +58,7 @@ class Launch: Codable {
         case timeline = "timeline"
     }
     
-    init(flightNumber: Int?, missionName: String?, missionID: [String]?, launchYear: String?, launchDateUnix: Int?, launchDateUTC: String?, launchDateLocal: String?, isTentative: Bool?, tentativeMaxPrecision: String?, tbd: Bool?, launchWindow: Int?, rocket: Rocket?, ships: [String]?, telemetry: Telemetry?, launchSite: LaunchSite?, launchSuccess: Bool?, links: Links?, details: String?, upcoming: Bool?, staticFireDateUTC: String?, staticFireDateUnix: Int?, timeline: [String: Int]?) {
+    init(flightNumber: Int?, missionName: String?, missionID: [String]?, launchYear: String?, launchDateUnix: Int?, launchDateUTC: String?, launchDateLocal: String?, isTentative: Bool?, tentativeMaxPrecision: String?, tbd: Bool?, launchWindow: Int?, rocket: Rocket?, ships: [String]?, telemetry: Telemetry?, launchSite: LaunchSite?, launchSuccess: Bool?, links: Links?, details: String?, upcoming: Bool?, staticFireDateUTC: String?, staticFireDateUnix: Int?, timeline: Timeline?) {
         self.flightNumber = flightNumber
         self.missionName = missionName
         self.missionID = missionID
