@@ -20,7 +20,7 @@ class SXRequestHandler: NSObject {
     
     public static func requestWithUrl <R: Decodable> (url: String?, responseType: R.Type, completion: @escaping (R?, Error?) -> Void) {
         guard let urlString = url, let url = URL(string: urlString) else {
-            print("\(namespace): Error converting URL String to URL object.")
+            debugPrint("\(namespace): Error converting URL String to URL object.")
             let error = NSError(domain: namespace, code: 0, userInfo: nil)
             completion(nil, error)
             return
@@ -52,7 +52,7 @@ class SXRequestHandler: NSObject {
             let decodedData = try decoder.decode(objectType, from: responseData)
             return decodedData
         } catch {
-            print("\(namespace): Error decoding JSON Data to Object.")
+            debugPrint("\(namespace): Error decoding JSON Data to Object.")
             return nil
         }
     }
@@ -62,11 +62,11 @@ class SXRequestHandler: NSObject {
         if let data = data {
             responseString = String(data: data, encoding: .utf8)
         }
-        print("****************************")
-        print("\(namespace): Success")
-        print("Request URL: \(requestUrl)")
-        print("Response: \(responseString ?? "Empty or no response").")
-        print("****************************")
+        debugPrint("****************************")
+        debugPrint("\(namespace): Success")
+        debugPrint("Request URL: \(requestUrl)")
+        debugPrint("Response: \(responseString ?? "Empty or no response").")
+        debugPrint("****************************")
     }
     
     private static func printFailedResponse (requestUrl: String, error: Error?) {
@@ -74,11 +74,11 @@ class SXRequestHandler: NSObject {
         if let error = error {
             errorDescription = error.localizedDescription
         }
-        print("****************************")
-        print("\(namespace): Error")
-        print("Request URL: \(requestUrl)")
-        print("Error: \(errorDescription ?? "No error description").")
-        print("****************************")
+        debugPrint("****************************")
+        debugPrint("\(namespace): Error")
+        debugPrint("Request URL: \(requestUrl)")
+        debugPrint("Error: \(errorDescription ?? "No error description").")
+        debugPrint("****************************")
     }
     
 }

@@ -66,8 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				21BB6EC9229A077000C50CDE /* Capsule.swift */,
-				21BB6ECB229A088600C50CDE /* Mission.swift */,
 				21945823229A3D9E0093ED68 /* Core.swift */,
+				21BB6ECB229A088600C50CDE /* Mission.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
