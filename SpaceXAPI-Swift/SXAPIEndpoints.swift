@@ -115,4 +115,14 @@ class SXAPIEndpoints: NSObject {
         return url + "/launches/next"
     }
     
+    // MARK: - Launchpads
+    
+    static func getAllLaunchPads () -> String {
+        return url + "/launchpads"
+    }
+    
+    static func getLaunchPad (siteId: String) -> String {
+        return url + "/launchpads" + "/\(siteId)"
+    }
+    
 }

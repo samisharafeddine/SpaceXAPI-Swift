@@ -269,4 +269,28 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Launchpads
+    
+    public func getAllLaunchPads (completion: @escaping ([LaunchPad]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllLaunchPads()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [LaunchPad].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getLaunchPad (siteId: String, completion: @escaping (LaunchPad?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getLaunchPad(siteId: siteId)
+        SXRequestHandler.requestWithUrl(url: url, responseType: LaunchPad.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }

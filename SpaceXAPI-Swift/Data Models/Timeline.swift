@@ -9,6 +9,7 @@
 import Foundation
 
 class Timeline: Codable {
+    
     let webcastLiftoff: Int?
     let goForPropLoading: Int?
     let rp1Loading: Int?
