@@ -63,4 +63,14 @@ class SXAPIEndpoints: NSObject {
         return url + "/dragons" + "/\(id)"
     }
     
+    // MARK: - History
+    
+    static func getAllHistoryEvents () -> String {
+        return url + "/history"
+    }
+    
+    static func getHistoryEvent (id: Int) -> String {
+        return url + "/history" + "/\(id)"
+    }
+    
 }

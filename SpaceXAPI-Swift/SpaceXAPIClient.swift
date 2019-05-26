@@ -140,4 +140,28 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - History
+    
+    public func getAllHistoryEvents (completion: @escaping ([HistoryEvent]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllHistoryEvents()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [HistoryEvent].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getHistoryEvent (id: Int, completion: @escaping (HistoryEvent?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getHistoryEvent(id: id)
+        SXRequestHandler.requestWithUrl(url: url, responseType: HistoryEvent.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }
