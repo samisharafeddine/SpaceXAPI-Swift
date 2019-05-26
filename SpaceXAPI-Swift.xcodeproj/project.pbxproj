@@ -48,6 +48,7 @@
 		211113E3229B4E9800419C3E /* CompositeFairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E2229B4E9800419C3E /* CompositeFairing.swift */; };
 		211113E5229B4EAD00419C3E /* CompositeFairingHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E4229B4EAD00419C3E /* CompositeFairingHeight.swift */; };
 		211113E7229B4FF600419C3E /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E6229B4FF600419C3E /* Rocket.swift */; };
+		211113E9229B51F400419C3E /* Roadster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E8229B51F400419C3E /* Roadster.swift */; };
 		21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945821229A36C10093ED68 /* SXAPIEndpoints.swift */; };
 		21945824229A3D9E0093ED68 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945823229A3D9E0093ED68 /* Core.swift */; };
 		21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */; };
@@ -103,6 +104,7 @@
 		211113E2229B4E9800419C3E /* CompositeFairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeFairing.swift; sourceTree = "<group>"; };
 		211113E4229B4EAD00419C3E /* CompositeFairingHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeFairingHeight.swift; sourceTree = "<group>"; };
 		211113E6229B4FF600419C3E /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		211113E8229B51F400419C3E /* Roadster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadster.swift; sourceTree = "<group>"; };
 		21945821229A36C10093ED68 /* SXAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXAPIEndpoints.swift; sourceTree = "<group>"; };
 		21945823229A3D9E0093ED68 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				211113E2229B4E9800419C3E /* CompositeFairing.swift */,
 				211113E4229B4EAD00419C3E /* CompositeFairingHeight.swift */,
 				211113E6229B4FF600419C3E /* Rocket.swift */,
+				211113E8229B51F400419C3E /* Roadster.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				211113CA229B0EA500419C3E /* OrbitParams.swift in Sources */,
 				211113C3229B0E2F00419C3E /* Fairings.swift in Sources */,
 				2111139B229AD89600419C3E /* PayloadMass.swift in Sources */,
+				211113E9229B51F400419C3E /* Roadster.swift in Sources */,
 				211113A9229ADAC100419C3E /* Cargo.swift in Sources */,
 				21BB6EC82299F5BF00C50CDE /* SXRequestHandler.swift in Sources */,
 			);

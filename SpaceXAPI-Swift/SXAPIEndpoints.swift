@@ -155,4 +155,10 @@ class SXAPIEndpoints: NSObject {
         return url + "/rockets" + "/\(rocketId)"
     }
     
+    // MARK: - Roadster
+    
+    static func getRoadster () -> String {
+        return url + "/roadster"
+    }
+    
 }

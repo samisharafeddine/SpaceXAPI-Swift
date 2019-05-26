@@ -365,4 +365,17 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Roadster
+    
+    public func getRoadster (completion: @escaping (Roadster?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getRoadster()
+        SXRequestHandler.requestWithUrl(url: url, responseType: Roadster.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }
