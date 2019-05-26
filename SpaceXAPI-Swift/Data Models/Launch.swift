@@ -31,7 +31,7 @@ class Launch: Codable {
     let upcoming: Bool?
     let staticFireDateUTC: String?
     let staticFireDateUnix: Int?
-    let timeline: [String: Int]?
+    let timeline: Timeline?
     
     enum CodingKeys: String, CodingKey {
         case flightNumber = "flight_number"
