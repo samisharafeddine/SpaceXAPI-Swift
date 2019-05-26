@@ -25,7 +25,7 @@
 		211113B3229AF7F600419C3E /* LandingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113B2229AF7F600419C3E /* LandingPad.swift */; };
 		211113B5229AF83800419C3E /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113B4229AF83800419C3E /* Landing.swift */; };
 		211113B7229B0C6D00419C3E /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113B6229B0C6D00419C3E /* Launch.swift */; };
-		211113B9229B0C8000419C3E /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113B8229B0C8000419C3E /* Rocket.swift */; };
+		211113B9229B0C8000419C3E /* LaunchingRocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113B8229B0C8000419C3E /* LaunchingRocket.swift */; };
 		211113BB229B0CF300419C3E /* Telemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113BA229B0CF300419C3E /* Telemetry.swift */; };
 		211113BD229B0D2600419C3E /* LaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113BC229B0D2600419C3E /* LaunchSite.swift */; };
 		211113BF229B0DD300419C3E /* FirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113BE229B0DD300419C3E /* FirstStage.swift */; };
@@ -37,6 +37,17 @@
 		211113CC229B149900419C3E /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113CB229B149900419C3E /* Timeline.swift */; };
 		211113CE229B18C900419C3E /* LaunchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113CD229B18C900419C3E /* LaunchPad.swift */; };
 		211113D0229B1BE100419C3E /* CompanyMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113CF229B1BE100419C3E /* CompanyMission.swift */; };
+		211113D3229B4CBE00419C3E /* RocketHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113D2229B4CBE00419C3E /* RocketHeight.swift */; };
+		211113D5229B4CDA00419C3E /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113D4229B4CDA00419C3E /* Mass.swift */; };
+		211113D7229B4CF300419C3E /* PayloadWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113D6229B4CF300419C3E /* PayloadWeight.swift */; };
+		211113D9229B4D1600419C3E /* Engines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113D8229B4D1600419C3E /* Engines.swift */; };
+		211113DB229B4D7100419C3E /* LandingLegs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113DA229B4D7100419C3E /* LandingLegs.swift */; };
+		211113DD229B4E0B00419C3E /* RocketFirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113DC229B4E0B00419C3E /* RocketFirstStage.swift */; };
+		211113DF229B4E3900419C3E /* RocketSecondStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113DE229B4E3900419C3E /* RocketSecondStage.swift */; };
+		211113E1229B4E8600419C3E /* Payloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E0229B4E8500419C3E /* Payloads.swift */; };
+		211113E3229B4E9800419C3E /* CompositeFairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E2229B4E9800419C3E /* CompositeFairing.swift */; };
+		211113E5229B4EAD00419C3E /* CompositeFairingHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E4229B4EAD00419C3E /* CompositeFairingHeight.swift */; };
+		211113E7229B4FF600419C3E /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113E6229B4FF600419C3E /* Rocket.swift */; };
 		21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945821229A36C10093ED68 /* SXAPIEndpoints.swift */; };
 		21945824229A3D9E0093ED68 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945823229A3D9E0093ED68 /* Core.swift */; };
 		21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */; };
@@ -69,7 +80,7 @@
 		211113B2229AF7F600419C3E /* LandingPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPad.swift; sourceTree = "<group>"; };
 		211113B4229AF83800419C3E /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
 		211113B6229B0C6D00419C3E /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
-		211113B8229B0C8000419C3E /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		211113B8229B0C8000419C3E /* LaunchingRocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingRocket.swift; sourceTree = "<group>"; };
 		211113BA229B0CF300419C3E /* Telemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telemetry.swift; sourceTree = "<group>"; };
 		211113BC229B0D2600419C3E /* LaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSite.swift; sourceTree = "<group>"; };
 		211113BE229B0DD300419C3E /* FirstStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStage.swift; sourceTree = "<group>"; };
@@ -81,6 +92,17 @@
 		211113CB229B149900419C3E /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		211113CD229B18C900419C3E /* LaunchPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPad.swift; sourceTree = "<group>"; };
 		211113CF229B1BE100419C3E /* CompanyMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyMission.swift; sourceTree = "<group>"; };
+		211113D2229B4CBE00419C3E /* RocketHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketHeight.swift; sourceTree = "<group>"; };
+		211113D4229B4CDA00419C3E /* Mass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mass.swift; sourceTree = "<group>"; };
+		211113D6229B4CF300419C3E /* PayloadWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadWeight.swift; sourceTree = "<group>"; };
+		211113D8229B4D1600419C3E /* Engines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engines.swift; sourceTree = "<group>"; };
+		211113DA229B4D7100419C3E /* LandingLegs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingLegs.swift; sourceTree = "<group>"; };
+		211113DC229B4E0B00419C3E /* RocketFirstStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFirstStage.swift; sourceTree = "<group>"; };
+		211113DE229B4E3900419C3E /* RocketSecondStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketSecondStage.swift; sourceTree = "<group>"; };
+		211113E0229B4E8500419C3E /* Payloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payloads.swift; sourceTree = "<group>"; };
+		211113E2229B4E9800419C3E /* CompositeFairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeFairing.swift; sourceTree = "<group>"; };
+		211113E4229B4EAD00419C3E /* CompositeFairingHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeFairingHeight.swift; sourceTree = "<group>"; };
+		211113E6229B4FF600419C3E /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		21945821229A36C10093ED68 /* SXAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXAPIEndpoints.swift; sourceTree = "<group>"; };
 		21945823229A3D9E0093ED68 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
@@ -146,7 +168,7 @@
 				211113B2229AF7F600419C3E /* LandingPad.swift */,
 				211113B4229AF83800419C3E /* Landing.swift */,
 				211113B6229B0C6D00419C3E /* Launch.swift */,
-				211113B8229B0C8000419C3E /* Rocket.swift */,
+				211113B8229B0C8000419C3E /* LaunchingRocket.swift */,
 				211113BA229B0CF300419C3E /* Telemetry.swift */,
 				211113BC229B0D2600419C3E /* LaunchSite.swift */,
 				211113BE229B0DD300419C3E /* FirstStage.swift */,
@@ -158,6 +180,17 @@
 				211113CB229B149900419C3E /* Timeline.swift */,
 				211113CD229B18C900419C3E /* LaunchPad.swift */,
 				211113CF229B1BE100419C3E /* CompanyMission.swift */,
+				211113D2229B4CBE00419C3E /* RocketHeight.swift */,
+				211113D4229B4CDA00419C3E /* Mass.swift */,
+				211113D6229B4CF300419C3E /* PayloadWeight.swift */,
+				211113D8229B4D1600419C3E /* Engines.swift */,
+				211113DA229B4D7100419C3E /* LandingLegs.swift */,
+				211113DC229B4E0B00419C3E /* RocketFirstStage.swift */,
+				211113DE229B4E3900419C3E /* RocketSecondStage.swift */,
+				211113E0229B4E8500419C3E /* Payloads.swift */,
+				211113E2229B4E9800419C3E /* CompositeFairing.swift */,
+				211113E4229B4EAD00419C3E /* CompositeFairingHeight.swift */,
+				211113E6229B4FF600419C3E /* Rocket.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -337,29 +370,40 @@
 				211113B3229AF7F600419C3E /* LandingPad.swift in Sources */,
 				21F7FC592299EDD50090B659 /* TestController.swift in Sources */,
 				2111139F229AD96B00419C3E /* PressurizedCapsule.swift in Sources */,
+				211113E3229B4E9800419C3E /* CompositeFairing.swift in Sources */,
+				211113D5229B4CDA00419C3E /* Mass.swift in Sources */,
 				21BB6ECA229A077000C50CDE /* Capsule.swift in Sources */,
 				211113BD229B0D2600419C3E /* LaunchSite.swift in Sources */,
 				211113C5229B0E6600419C3E /* FirstStageCore.swift in Sources */,
+				211113DD229B4E0B00419C3E /* RocketFirstStage.swift in Sources */,
+				211113E1229B4E8600419C3E /* Payloads.swift in Sources */,
 				21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */,
 				211113B7229B0C6D00419C3E /* Launch.swift in Sources */,
+				211113DB229B4D7100419C3E /* LandingLegs.swift in Sources */,
+				211113E5229B4EAD00419C3E /* CompositeFairingHeight.swift in Sources */,
 				21111395229AD80400419C3E /* Dragon.swift in Sources */,
 				211113A3229ADA1200419C3E /* HeightWithTrunk.swift in Sources */,
 				211113D0229B1BE100419C3E /* CompanyMission.swift in Sources */,
 				211113BB229B0CF300419C3E /* Telemetry.swift in Sources */,
 				21111399229AD86900419C3E /* Thruster.swift in Sources */,
 				211113A7229ADA8400419C3E /* Thrust.swift in Sources */,
+				211113DF229B4E3900419C3E /* RocketSecondStage.swift in Sources */,
 				211113C1229B0DF900419C3E /* SecondStage.swift in Sources */,
 				21111397229AD83100419C3E /* HeatShield.swift in Sources */,
 				211113AB229AE04400419C3E /* HistoryEvent.swift in Sources */,
 				211113CE229B18C900419C3E /* LaunchPad.swift in Sources */,
 				211113B5229AF83800419C3E /* Landing.swift in Sources */,
-				211113B9229B0C8000419C3E /* Rocket.swift in Sources */,
+				211113D3229B4CBE00419C3E /* RocketHeight.swift in Sources */,
+				211113D9229B4D1600419C3E /* Engines.swift in Sources */,
+				211113B9229B0C8000419C3E /* LaunchingRocket.swift in Sources */,
 				21F7FC572299EDD50090B659 /* AppDelegate.swift in Sources */,
+				211113D7229B4CF300419C3E /* PayloadWeight.swift in Sources */,
 				211113A5229ADA3A00419C3E /* Diameter.swift in Sources */,
 				211113B1229AF55D00419C3E /* Headquarters.swift in Sources */,
 				211113AF229AF52D00419C3E /* CompanyInfo.swift in Sources */,
 				211113BF229B0DD300419C3E /* FirstStage.swift in Sources */,
 				211113C7229B0E8D00419C3E /* Payload.swift in Sources */,
+				211113E7229B4FF600419C3E /* Rocket.swift in Sources */,
 				21945824229A3D9E0093ED68 /* Core.swift in Sources */,
 				211113CA229B0EA500419C3E /* OrbitParams.swift in Sources */,
 				211113C3229B0E2F00419C3E /* Fairings.swift in Sources */,

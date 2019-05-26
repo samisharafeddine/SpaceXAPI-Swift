@@ -341,4 +341,28 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Rockets
+    
+    public func getAllRockets (completion: @escaping ([Rocket]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllRockets()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Rocket].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getRocket (rocketId: String, completion: @escaping (Rocket?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getRocket(rocketId: rocketId)
+        SXRequestHandler.requestWithUrl(url: url, responseType: Rocket.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }
