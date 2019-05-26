@@ -135,4 +135,14 @@ class SXAPIEndpoints: NSObject {
         return url + "/missions" + "/\(missionId)"
     }
     
+    // MARK: - Payloads
+    
+    static func getAllPayloads () -> String {
+        return url + "/payloads"
+    }
+    
+    static func getPayload (payloadId: String) -> String {
+        return url + "/payloads" + "/\(payloadId)"
+    }
+    
 }

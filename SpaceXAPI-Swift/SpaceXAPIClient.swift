@@ -317,4 +317,28 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Payloads
+    
+    public func getAllPayloads (completion: @escaping ([Payload]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllPayloads()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Payload].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getPayload (payloadId: String, completion: @escaping (Payload?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getPayload(payloadId: payloadId)
+        SXRequestHandler.requestWithUrl(url: url, responseType: Payload.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }
