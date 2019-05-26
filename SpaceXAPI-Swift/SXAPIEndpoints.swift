@@ -125,4 +125,14 @@ class SXAPIEndpoints: NSObject {
         return url + "/launchpads" + "/\(siteId)"
     }
     
+    // MARK: - Missions
+    
+    static func getAllMissions () -> String {
+        return url + "/missions"
+    }
+    
+    static func getMission (missionId: String) -> String {
+        return url + "/missions" + "/\(missionId)"
+    }
+    
 }

@@ -293,4 +293,28 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Missions
+    
+    public func getAllMissions (completion: @escaping ([CompanyMission]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllMissions()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [CompanyMission].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getMission (missionId: String, completion: @escaping (CompanyMission?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getMission(missionId: missionId)
+        SXRequestHandler.requestWithUrl(url: url, responseType: CompanyMission.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }

@@ -36,6 +36,7 @@
 		211113CA229B0EA500419C3E /* OrbitParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113C9229B0EA500419C3E /* OrbitParams.swift */; };
 		211113CC229B149900419C3E /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113CB229B149900419C3E /* Timeline.swift */; };
 		211113CE229B18C900419C3E /* LaunchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113CD229B18C900419C3E /* LaunchPad.swift */; };
+		211113D0229B1BE100419C3E /* CompanyMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211113CF229B1BE100419C3E /* CompanyMission.swift */; };
 		21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945821229A36C10093ED68 /* SXAPIEndpoints.swift */; };
 		21945824229A3D9E0093ED68 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945823229A3D9E0093ED68 /* Core.swift */; };
 		21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */; };
@@ -79,6 +80,7 @@
 		211113C9229B0EA500419C3E /* OrbitParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitParams.swift; sourceTree = "<group>"; };
 		211113CB229B149900419C3E /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		211113CD229B18C900419C3E /* LaunchPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPad.swift; sourceTree = "<group>"; };
+		211113CF229B1BE100419C3E /* CompanyMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyMission.swift; sourceTree = "<group>"; };
 		21945821229A36C10093ED68 /* SXAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXAPIEndpoints.swift; sourceTree = "<group>"; };
 		21945823229A3D9E0093ED68 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				211113C9229B0EA500419C3E /* OrbitParams.swift */,
 				211113CB229B149900419C3E /* Timeline.swift */,
 				211113CD229B18C900419C3E /* LaunchPad.swift */,
+				211113CF229B1BE100419C3E /* CompanyMission.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				211113B7229B0C6D00419C3E /* Launch.swift in Sources */,
 				21111395229AD80400419C3E /* Dragon.swift in Sources */,
 				211113A3229ADA1200419C3E /* HeightWithTrunk.swift in Sources */,
+				211113D0229B1BE100419C3E /* CompanyMission.swift in Sources */,
 				211113BB229B0CF300419C3E /* Telemetry.swift in Sources */,
 				21111399229AD86900419C3E /* Thruster.swift in Sources */,
 				211113A7229ADA8400419C3E /* Thrust.swift in Sources */,
