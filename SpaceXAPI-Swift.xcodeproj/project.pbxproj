@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945821229A36C10093ED68 /* SXAPIEndpoints.swift */; };
+		21945824229A3D9E0093ED68 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945823229A3D9E0093ED68 /* Core.swift */; };
 		21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */; };
 		21BB6EC42299F42700C50CDE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BB6EC32299F42700C50CDE /* Launch Screen.storyboard */; };
 		21BB6EC82299F5BF00C50CDE /* SXRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		21945821229A36C10093ED68 /* SXAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXAPIEndpoints.swift; sourceTree = "<group>"; };
+		21945823229A3D9E0093ED68 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		21BB6EC32299F42700C50CDE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXRequestHandler.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				21BB6EC9229A077000C50CDE /* Capsule.swift */,
 				21BB6ECB229A088600C50CDE /* Mission.swift */,
+				21945823229A3D9E0093ED68 /* Core.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				21BB6ECA229A077000C50CDE /* Capsule.swift in Sources */,
 				21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */,
 				21F7FC572299EDD50090B659 /* AppDelegate.swift in Sources */,
+				21945824229A3D9E0093ED68 /* Core.swift in Sources */,
 				21BB6EC82299F5BF00C50CDE /* SXRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

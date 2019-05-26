@@ -11,12 +11,20 @@ import Alamofire
 
 class SpaceXAPIClient: NSObject {
     
+    // MARK: - Declarations
+    
     public static let shared = SpaceXAPIClient()
+    
+    // MARK: - Core methods
     
     private override init() {
         // Just make sure only one instance exists within the entire app.
         super.init()
     }
+    
+    // MARK: - API Calls
+    
+    // MARK: - Capsules
     
     public func getAllCapsules (completion: @escaping ([Capsule]?, Error?) -> Void) {
         let url = SXAPIEndpoints.getAllCapsules()
@@ -54,6 +62,52 @@ class SpaceXAPIClient: NSObject {
     public func getPastCapsules (completion: @escaping ([Capsule]?, Error?) -> Void) {
         let url = SXAPIEndpoints.getPastCapsules()
         SXRequestHandler.requestWithUrl(url: url, responseType: [Capsule].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    // MARK: - Cores
+    
+    public func getAllCores (completion: @escaping ([Core]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllCores()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Core].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getCore (coreSerial: String, completion: @escaping (Core?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getCore(coreSerial: coreSerial)
+        SXRequestHandler.requestWithUrl(url: url, responseType: Core.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getUpcomingCores (completion: @escaping ([Core]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getUpcomingCores()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Core].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getPastCores (completion: @escaping ([Core]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getPastCores()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Core].self) { (result, error) in
             if let error = error {
                 completion(nil, error)
                 return

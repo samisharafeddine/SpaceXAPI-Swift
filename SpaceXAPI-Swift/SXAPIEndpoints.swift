@@ -33,4 +33,20 @@ class SXAPIEndpoints: NSObject {
         return url + "/capsules/past"
     }
     
+    static func getAllCores () -> String {
+        return url + "/cores"
+    }
+    
+    static func getCore (coreSerial: String) -> String {
+        return url + "/cores" + "/\(coreSerial)"
+    }
+    
+    static func getUpcomingCores () -> String {
+        return url + "/cores/upcoming"
+    }
+    
+    static func getPastCores () -> String {
+        return url + "/cores/past"
+    }
+    
 }
