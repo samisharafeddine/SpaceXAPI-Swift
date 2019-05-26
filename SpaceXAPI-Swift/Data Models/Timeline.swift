@@ -31,6 +31,20 @@ class Timeline: Codable {
     let dragonSeparation: Int?
     let dragonSolarDeploy: Int?
     let dragonBayDoorDeploy: Int?
+    let stage1Rp1Loading: Int?
+    let stage2Rp1Loading: Int?
+    let beco: Int?
+    let sideCoreSep: Int?
+    let sideCoreBoostback: Int?
+    let centerStageSep: Int?
+    let fairingDeploy: Int?
+    let sideCoreEntryBurn: Int?
+    let centerCoreEntryBurn: Int?
+    let sideCoreLanding: Int?
+    let centerCoreLanding: Int?
+    let secondStageRestart: Int?
+    let seco2: Int?
+    let payloadDeploy: Int?
     
     enum CodingKeys: String, CodingKey {
         case webcastLiftoff = "webcast_liftoff"
@@ -55,9 +69,23 @@ class Timeline: Codable {
         case dragonSeparation = "dragon_separation"
         case dragonSolarDeploy = "dragon_solar_deploy"
         case dragonBayDoorDeploy = "dragon_bay_door_deploy"
+        case stage1Rp1Loading = "stage1_rp1_loading"
+        case stage2Rp1Loading = "stage2_rp1_loading"
+        case beco = "beco"
+        case sideCoreSep = "side_core_sep"
+        case sideCoreBoostback = "side_core_boostback"
+        case centerStageSep = "center_stage_sep"
+        case fairingDeploy = "fairing_deploy"
+        case sideCoreEntryBurn = "side_core_entry_burn"
+        case centerCoreEntryBurn = "center_core_entry_burn"
+        case sideCoreLanding = "side_core_landing"
+        case centerCoreLanding = "center_core_landing"
+        case secondStageRestart = "second_stage_restart"
+        case seco2 = "seco-2"
+        case payloadDeploy = "payload_deploy"
     }
     
-    init(webcastLiftoff: Int?, goForPropLoading: Int?, rp1Loading: Int?, stage1LoxLoading: Int?, stage2LoxLoading: Int?, engineChill: Int?, prelaunchChecks: Int?, propellantPressurization: Int?, goForLaunch: Int?, ignition: Int?, liftoff: Int?, maxq: Int?, meco: Int?, stageSep: Int?, secondStageIgnition: Int?, firstStageBoostbackBurn: Int?, firstStageEntryBurn: Int?, firstStageLanding: Int?, seco1: Int?, dragonSeparation: Int?, dragonSolarDeploy: Int?, dragonBayDoorDeploy: Int?) {
+    init(webcastLiftoff: Int?, goForPropLoading: Int?, rp1Loading: Int?, stage1LoxLoading: Int?, stage2LoxLoading: Int?, engineChill: Int?, prelaunchChecks: Int?, propellantPressurization: Int?, goForLaunch: Int?, ignition: Int?, liftoff: Int?, maxq: Int?, meco: Int?, stageSep: Int?, secondStageIgnition: Int?, firstStageBoostbackBurn: Int?, firstStageEntryBurn: Int?, firstStageLanding: Int?, seco1: Int?, dragonSeparation: Int?, dragonSolarDeploy: Int?, dragonBayDoorDeploy: Int?, stage1Rp1Loading: Int?, stage2Rp1Loading: Int?, beco: Int?, sideCoreSep: Int?, sideCoreBoostback: Int?, centerStageSep: Int?, fairingDeploy: Int?, sideCoreEntryBurn: Int?, centerCoreEntryBurn: Int?, sideCoreLanding: Int?, centerCoreLanding: Int?, secondStageRestart: Int?, seco2: Int?, payloadDeploy: Int?) {
         self.webcastLiftoff = webcastLiftoff
         self.goForPropLoading = goForPropLoading
         self.rp1Loading = rp1Loading
@@ -80,5 +108,19 @@ class Timeline: Codable {
         self.dragonSeparation = dragonSeparation
         self.dragonSolarDeploy = dragonSolarDeploy
         self.dragonBayDoorDeploy = dragonBayDoorDeploy
+        self.stage1Rp1Loading = stage1Rp1Loading
+        self.stage2Rp1Loading = stage2Rp1Loading
+        self.beco = beco
+        self.sideCoreSep = sideCoreSep
+        self.sideCoreBoostback = sideCoreBoostback
+        self.centerStageSep = centerStageSep
+        self.fairingDeploy = fairingDeploy
+        self.sideCoreEntryBurn = sideCoreEntryBurn
+        self.centerCoreEntryBurn = centerCoreEntryBurn
+        self.sideCoreLanding = sideCoreLanding
+        self.centerCoreLanding = centerCoreLanding
+        self.secondStageRestart = secondStageRestart
+        self.seco2 = seco2
+        self.payloadDeploy = payloadDeploy
     }
 }
