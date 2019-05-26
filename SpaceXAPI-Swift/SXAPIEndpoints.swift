@@ -17,6 +17,12 @@ class SXAPIEndpoints: NSObject {
         super.init()
     }
     
+    // MARK: - Info
+    
+    static func getComapanyInfo () -> String {
+        return url + "/info"
+    }
+    
     // MARK: - Capsules
     
     static func getAllCapsules () -> String {
@@ -71,6 +77,16 @@ class SXAPIEndpoints: NSObject {
     
     static func getHistoryEvent (id: Int) -> String {
         return url + "/history" + "/\(id)"
+    }
+    
+    // MARK: - Landing Pads
+    
+    static func getAllLandingPads () -> String {
+        return url + "/landpads"
+    }
+    
+    static func getLandingPad (id: String) -> String {
+        return url + "/landpads" + "/\(id)"
     }
     
 }

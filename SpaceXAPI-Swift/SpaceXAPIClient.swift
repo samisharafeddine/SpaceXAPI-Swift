@@ -24,6 +24,19 @@ class SpaceXAPIClient: NSObject {
     
     // MARK: - API Calls
     
+    // MARK: - Info
+    
+    public func getCompanyInfo (completion: @escaping (CompanyInfo?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getComapanyInfo()
+        SXRequestHandler.requestWithUrl(url: url, responseType: CompanyInfo.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
     // MARK: - Capsules
     
     public func getAllCapsules (completion: @escaping ([Capsule]?, Error?) -> Void) {
@@ -156,6 +169,30 @@ class SpaceXAPIClient: NSObject {
     public func getHistoryEvent (id: Int, completion: @escaping (HistoryEvent?, Error?) -> Void) {
         let url = SXAPIEndpoints.getHistoryEvent(id: id)
         SXRequestHandler.requestWithUrl(url: url, responseType: HistoryEvent.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    // MARK: - Landing Pads
+    
+    public func getAllLandingPads (completion: @escaping ([LandingPad]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllLandingPads()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [LandingPad].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getLandingPad (id: String, completion: @escaping (LandingPad?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getLandingPad(id: id)
+        SXRequestHandler.requestWithUrl(url: url, responseType: LandingPad.self) { (result, error) in
             if let error = error {
                 completion(nil, error)
                 return

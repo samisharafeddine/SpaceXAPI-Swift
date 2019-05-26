@@ -17,9 +17,9 @@ class TestController: UIViewController {
     }
     
     func testFunc () {
-        SpaceXAPIClient.shared.getAllDragons { (dragons, error) in
+        SpaceXAPIClient.shared.getCompanyInfo { (info, error) in
             guard error == nil else { return }
-            print(dragons)
+            print(info?.ceo ?? "")
         }
     }
 
