@@ -378,4 +378,28 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    // MARK: - Ships
+    
+    public func getAllShips (completion: @escaping ([Ship]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllShips()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Ship].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getShip (shipId: String, completion: @escaping (Ship?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getShip(shipId: shipId)
+        SXRequestHandler.requestWithUrl(url: url, responseType: Ship.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }

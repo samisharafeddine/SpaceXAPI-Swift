@@ -161,4 +161,14 @@ class SXAPIEndpoints: NSObject {
         return url + "/roadster"
     }
     
+    // MARK: - Ships
+    
+    static func getAllShips () -> String {
+        return url + "/ships"
+    }
+    
+    static func getShip (shipId: String) -> String {
+        return url + "/ships" + "/\(shipId)"
+    }
+
 }
