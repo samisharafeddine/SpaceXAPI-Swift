@@ -29,4 +29,8 @@ class SXAPIEndpoints: NSObject {
         return url + "/capsules/upcoming"
     }
     
+    static func getPastCapsules () -> String {
+        return url + "/capsules/past"
+    }
+    
 }

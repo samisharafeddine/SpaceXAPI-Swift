@@ -51,4 +51,15 @@ class SpaceXAPIClient: NSObject {
         }
     }
     
+    public func getPastCapsules (completion: @escaping ([Capsule]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getPastCapsules()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Capsule].self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
 }
