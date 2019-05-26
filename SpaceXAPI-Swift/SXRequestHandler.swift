@@ -13,6 +13,11 @@ class SXRequestHandler: NSObject {
     
     private static let namespace = "SXRequestHandler"
     
+    private override init() {
+        // Just make sure no instance could be created.
+        super.init()
+    }
+    
     public static func requestWithUrl <R: Decodable> (url: String?, responseType: R.Type, completion: @escaping (R?, Error?) -> Void) {
         guard let urlString = url, let url = URL(string: urlString) else {
             print("\(namespace): Error converting URL String to URL object.")

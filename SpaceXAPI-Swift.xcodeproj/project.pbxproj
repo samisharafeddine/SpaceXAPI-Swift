@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21945821229A36C10093ED68 /* SXAPIEndpoints.swift */; };
 		21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */; };
 		21BB6EC42299F42700C50CDE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BB6EC32299F42700C50CDE /* Launch Screen.storyboard */; };
 		21BB6EC82299F5BF00C50CDE /* SXRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21945821229A36C10093ED68 /* SXAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXAPIEndpoints.swift; sourceTree = "<group>"; };
 		21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		21BB6EC32299F42700C50CDE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXRequestHandler.swift; sourceTree = "<group>"; };
@@ -70,8 +72,8 @@
 		21F7FC4A2299EDD50090B659 = {
 			isa = PBXGroup;
 			children = (
-				21BB6EC02299F3B700C50CDE /* Other */,
 				21F7FC552299EDD50090B659 /* SpaceXAPI-Swift */,
+				21BB6EC02299F3B700C50CDE /* Other */,
 				21F7FC542299EDD50090B659 /* Products */,
 				C2074BFBAD8DB4FC21CB9A36 /* Pods */,
 				D5F1F5C237D50A3AE1192BC6 /* Frameworks */,
@@ -89,9 +91,10 @@
 		21F7FC552299EDD50090B659 /* SpaceXAPI-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				21BB6EC62299F4E600C50CDE /* Data Models */,
 				21BB6EC12299F3ED00C50CDE /* SpaceXAPIClient.swift */,
+				21945821229A36C10093ED68 /* SXAPIEndpoints.swift */,
 				21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */,
+				21BB6EC62299F4E600C50CDE /* Data Models */,
 			);
 			path = "SpaceXAPI-Swift";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21BB6ECC229A088600C50CDE /* Mission.swift in Sources */,
+				21945822229A36C10093ED68 /* SXAPIEndpoints.swift in Sources */,
 				21F7FC592299EDD50090B659 /* TestController.swift in Sources */,
 				21BB6ECA229A077000C50CDE /* Capsule.swift in Sources */,
 				21BB6EC22299F3ED00C50CDE /* SpaceXAPIClient.swift in Sources */,

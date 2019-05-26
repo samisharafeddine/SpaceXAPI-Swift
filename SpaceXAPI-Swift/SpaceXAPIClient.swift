@@ -19,7 +19,8 @@ class SpaceXAPIClient: NSObject {
     }
     
     public func getAllCapsules (completion: @escaping ([Capsule]?, Error?) -> Void) {
-        SXRequestHandler.requestWithUrl(url: "https://api.spacexdata.com/v3/capsules", responseType: [Capsule].self) { (result, error) in
+        let url = SXAPIEndpoints.getAllCapsules()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Capsule].self) { (result, error) in
             if let error = error {
                 completion(nil, error)
                 return
@@ -29,7 +30,19 @@ class SpaceXAPIClient: NSObject {
     }
     
     public func getCapsule (capsuleSerial: String, completion: @escaping (Capsule?, Error?) -> Void) {
-        SXRequestHandler.requestWithUrl(url: "https://api.spacexdata.com/v3/capsules/\(capsuleSerial)", responseType: Capsule.self) { (result, error) in
+        let url = SXAPIEndpoints.getCapsule(capsuleSerial: capsuleSerial)
+        SXRequestHandler.requestWithUrl(url: url, responseType: Capsule.self) { (result, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            completion(result, nil)
+        }
+    }
+    
+    public func getAllUpcomingCapsules (completion: @escaping ([Capsule]?, Error?) -> Void) {
+        let url = SXAPIEndpoints.getAllUpcomingCapsules()
+        SXRequestHandler.requestWithUrl(url: url, responseType: [Capsule].self) { (result, error) in
             if let error = error {
                 completion(nil, error)
                 return
