@@ -13,14 +13,6 @@ class TestController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        testFunc()
-    }
-    
-    func testFunc () {
-        SpaceXAPIClient.shared.getAllDragons { (dragons, error) in
-            guard error == nil else { return }
-            print(dragons?[0].diameter?.meters?.intValue())
-        }
     }
 
 }

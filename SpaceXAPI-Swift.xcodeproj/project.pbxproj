@@ -140,12 +140,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		211113EE229B54EE00419C3E /* Extensions */ = {
+		211113EE229B54EE00419C3E /* Data Types */ = {
 			isa = PBXGroup;
 			children = (
 				21D291B6229B6615005636F7 /* SXNumber.swift */,
 			);
-			path = Extensions;
+			path = "Data Types";
 			sourceTree = "<group>";
 		};
 		21BB6EC02299F3B700C50CDE /* Other */ = {
@@ -240,7 +240,7 @@
 				21945821229A36C10093ED68 /* SXAPIEndpoints.swift */,
 				21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */,
 				21BB6EC62299F4E600C50CDE /* Data Models */,
-				211113EE229B54EE00419C3E /* Extensions */,
+				211113EE229B54EE00419C3E /* Data Types */,
 			);
 			path = "SpaceXAPI-Swift";
 			sourceTree = "<group>";
