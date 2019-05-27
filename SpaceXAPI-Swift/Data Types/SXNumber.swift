@@ -34,7 +34,7 @@ public enum SXNumber: Codable {
         }
     }
     
-    func intValue () -> Int? {
+    public func intValue () -> Int? {
         switch self {
         case .intValue(let value):
             return value
@@ -43,7 +43,7 @@ public enum SXNumber: Codable {
         }
     }
     
-    func doubleValue () -> Double? {
+    public func doubleValue () -> Double? {
         switch self {
         case .doubleValue(let value):
             return value
