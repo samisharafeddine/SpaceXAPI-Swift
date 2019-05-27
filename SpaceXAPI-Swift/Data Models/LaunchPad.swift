@@ -10,16 +10,16 @@ import Foundation
 
 public class LaunchPad: Codable {
     
-    let id: SXNumber?
-    let status: String?
-    let location: Location?
-    let vehiclesLaunched: [String]?
-    let attemptedLaunches: SXNumber?
-    let successfulLaunches: SXNumber?
-    let wikipedia: String?
-    let details: String?
-    let siteID: String?
-    let siteNameLong: String?
+    public let id: SXNumber?
+    public let status: String?
+    public let location: Location?
+    public let vehiclesLaunched: [String]?
+    public let attemptedLaunches: SXNumber?
+    public let successfulLaunches: SXNumber?
+    public let wikipedia: String?
+    public let details: String?
+    public let siteID: String?
+    public let siteNameLong: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"

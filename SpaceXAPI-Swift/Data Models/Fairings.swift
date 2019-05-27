@@ -10,10 +10,10 @@ import Foundation
 
 public class Fairings: Codable {
     
-    let reused: Bool?
-    let recoveryAttempt: Bool?
-    let recovered: Bool?
-    let ship: String?
+    public let reused: Bool?
+    public let recoveryAttempt: Bool?
+    public let recovered: Bool?
+    public let ship: String?
     
     enum CodingKeys: String, CodingKey {
         case reused = "reused"

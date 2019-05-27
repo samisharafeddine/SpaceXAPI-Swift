@@ -10,8 +10,8 @@ import Foundation
 
 public class LandingLegs: Codable {
     
-    let number: SXNumber?
-    let material: String?
+    public let number: SXNumber?
+    public let material: String?
     
     enum CodingKeys: String, CodingKey {
         case number = "number"

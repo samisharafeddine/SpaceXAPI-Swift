@@ -10,8 +10,8 @@ import Foundation
 
 public class Thrust: Codable {
     
-    let kN: SXNumber?
-    let lbf: SXNumber?
+    public let kN: SXNumber?
+    public let lbf: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case kN = "kN"

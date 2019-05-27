@@ -10,10 +10,10 @@ import Foundation
 
 public class Location: Codable {
     
-    let name: String?
-    let region: String?
-    let latitude: SXNumber?
-    let longitude: SXNumber?
+    public let name: String?
+    public let region: String?
+    public let latitude: SXNumber?
+    public let longitude: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case name = "name"

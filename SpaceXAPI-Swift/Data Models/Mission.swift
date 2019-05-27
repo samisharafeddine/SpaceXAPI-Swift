@@ -10,8 +10,8 @@ import Foundation
 
 public class Mission: Codable {
     
-    let name: String?
-    let flight: SXNumber?
+    public let name: String?
+    public let flight: SXNumber?
     
     init(name: String?, flight: SXNumber?) {
         self.name = name

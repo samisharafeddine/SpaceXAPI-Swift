@@ -10,12 +10,12 @@ import Foundation
 
 public class LaunchingRocket: Codable {
     
-    let rocketID: String?
-    let rocketName: String?
-    let rocketType: String?
-    let firstStage: FirstStage?
-    let secondStage: SecondStage?
-    let fairings: Fairings?
+    public let rocketID: String?
+    public let rocketName: String?
+    public let rocketType: String?
+    public let firstStage: FirstStage?
+    public let secondStage: SecondStage?
+    public let fairings: Fairings?
     
     enum CodingKeys: String, CodingKey {
         case rocketID = "rocket_id"

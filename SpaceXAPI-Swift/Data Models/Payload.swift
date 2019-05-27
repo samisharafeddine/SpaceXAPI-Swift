@@ -10,17 +10,17 @@ import Foundation
 
 public class Payload: Codable {
     
-    let payloadID: String?
-    let noradID: [SXNumber]?
-    let reused: Bool?
-    let customers: [String]?
-    let nationality: String?
-    let manufacturer: String?
-    let payloadType: String?
-    let payloadMassKg: SXNumber?
-    let payloadMassLbs: SXNumber?
-    let orbit: String?
-    let orbitParams: OrbitParams?
+    public let payloadID: String?
+    public let noradID: [SXNumber]?
+    public let reused: Bool?
+    public let customers: [String]?
+    public let nationality: String?
+    public let manufacturer: String?
+    public let payloadType: String?
+    public let payloadMassKg: SXNumber?
+    public let payloadMassLbs: SXNumber?
+    public let orbit: String?
+    public let orbitParams: OrbitParams?
     
     enum CodingKeys: String, CodingKey {
         case payloadID = "payload_id"

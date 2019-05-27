@@ -10,16 +10,16 @@ import Foundation
 
 public class Capsule: Codable {
     
-    let capsuleSerial: String?
-    let capsuleID: String?
-    let status: String?
-    let originalLaunch: String?
-    let originalLaunchUnix: SXNumber?
-    let missions: [Mission]?
-    let landings: SXNumber?
-    let type: String?
-    let details: String?
-    let reuseCount: SXNumber?
+    public let capsuleSerial: String?
+    public let capsuleID: String?
+    public let status: String?
+    public let originalLaunch: String?
+    public let originalLaunchUnix: SXNumber?
+    public let missions: [Mission]?
+    public let landings: SXNumber?
+    public let type: String?
+    public let details: String?
+    public let reuseCount: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case capsuleSerial = "capsule_serial"

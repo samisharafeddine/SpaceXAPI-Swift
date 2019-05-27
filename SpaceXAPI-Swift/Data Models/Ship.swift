@@ -10,29 +10,29 @@ import Foundation
 
 public class Ship: Codable {
     
-    let shipID: String?
-    let shipName: String?
-    let shipModel: String?
-    let shipType: String?
-    let roles: [String]?
-    let active: Bool?
-    let imo: SXNumber?
-    let mmsi: SXNumber?
-    let abs: SXNumber?
-    let shipClass: SXNumber?
-    let weightLbs: SXNumber?
-    let weightKg: SXNumber?
-    let yearBuilt: SXNumber?
-    let homePort: String?
-    let status: String?
-    let speedKn: SXNumber?
-    let courseDeg: SXNumber?
-    let position: Position?
-    let successfulLandings: SXNumber?
-    let attemptedLandings: SXNumber?
-    let missions: [Mission]?
-    let url: String?
-    let image: String?
+    public let shipID: String?
+    public let shipName: String?
+    public let shipModel: String?
+    public let shipType: String?
+    public let roles: [String]?
+    public let active: Bool?
+    public let imo: SXNumber?
+    public let mmsi: SXNumber?
+    public let abs: SXNumber?
+    public let shipClass: SXNumber?
+    public let weightLbs: SXNumber?
+    public let weightKg: SXNumber?
+    public let yearBuilt: SXNumber?
+    public let homePort: String?
+    public let status: String?
+    public let speedKn: SXNumber?
+    public let courseDeg: SXNumber?
+    public let position: Position?
+    public let successfulLandings: SXNumber?
+    public let attemptedLandings: SXNumber?
+    public let missions: [Mission]?
+    public let url: String?
+    public let image: String?
     
     enum CodingKeys: String, CodingKey {
         case shipID = "ship_id"

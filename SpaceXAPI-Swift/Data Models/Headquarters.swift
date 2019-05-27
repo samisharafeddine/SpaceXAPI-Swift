@@ -10,9 +10,9 @@ import Foundation
 
 public class Headquarters: Codable {
     
-    let address: String?
-    let city: String?
-    let state: String?
+    public let address: String?
+    public let city: String?
+    public let state: String?
     
     enum CodingKeys: String, CodingKey {
         case address = "address"

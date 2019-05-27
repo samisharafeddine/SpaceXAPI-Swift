@@ -10,7 +10,7 @@ import Foundation
 
 public class FirstStage: Codable {
     
-    let cores: [FirstStageCore]?
+    public let cores: [FirstStageCore]?
     
     enum CodingKeys: String, CodingKey {
         case cores = "cores"

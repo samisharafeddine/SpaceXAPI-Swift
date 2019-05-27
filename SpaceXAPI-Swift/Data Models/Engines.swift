@@ -10,16 +10,16 @@ import Foundation
 
 public class Engines: Codable {
     
-    let number: SXNumber?
-    let type: String?
-    let version: String?
-    let layout: String?
-    let engineLossMax: SXNumber?
-    let propellant1: String?
-    let propellant2: String?
-    let thrustSeaLevel: Thrust?
-    let thrustVacuum: Thrust?
-    let thrustToWeight: SXNumber?
+    public let number: SXNumber?
+    public let type: String?
+    public let version: String?
+    public let layout: String?
+    public let engineLossMax: SXNumber?
+    public let propellant1: String?
+    public let propellant2: String?
+    public let thrustSeaLevel: Thrust?
+    public let thrustVacuum: Thrust?
+    public let thrustToWeight: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case number = "number"

@@ -10,8 +10,8 @@ import Foundation
 
 public class CompositeFairingHeight: Codable {
     
-    let meters: SXNumber?
-    let feet: SXNumber?
+    public let meters: SXNumber?
+    public let feet: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case meters = "meters"

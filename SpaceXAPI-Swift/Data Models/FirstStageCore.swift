@@ -10,16 +10,16 @@ import Foundation
 
 public class FirstStageCore: Codable {
     
-    let coreSerial: String?
-    let flight: SXNumber?
-    let block: SXNumber?
-    let gridfins: Bool?
-    let legs: Bool?
-    let reused: Bool?
-    let landSuccess: Bool?
-    let landingIntent: Bool?
-    let landingType: String?
-    let landingVehicle: String?
+    public let coreSerial: String?
+    public let flight: SXNumber?
+    public let block: SXNumber?
+    public let gridfins: Bool?
+    public let legs: Bool?
+    public let reused: Bool?
+    public let landSuccess: Bool?
+    public let landingIntent: Bool?
+    public let landingType: String?
+    public let landingVehicle: String?
     
     enum CodingKeys: String, CodingKey {
         case coreSerial = "core_serial"

@@ -10,13 +10,13 @@ import Foundation
 
 public class HistoryEvent: Codable {
     
-    let id: SXNumber?
-    let title: String?
-    let eventDateUTC: String?
-    let eventDateUnix: SXNumber?
-    let flightNumber: SXNumber?
-    let details: String?
-    let links: Links?
+    public let id: SXNumber?
+    public let title: String?
+    public let eventDateUTC: String?
+    public let eventDateUnix: SXNumber?
+    public let flightNumber: SXNumber?
+    public let details: String?
+    public let links: Links?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"

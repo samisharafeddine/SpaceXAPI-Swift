@@ -10,21 +10,21 @@ import Foundation
 
 public class CompanyInfo: Codable {
     
-    let name: String?
-    let founder: String?
-    let founded: SXNumber?
-    let employees: SXNumber?
-    let vehicles: SXNumber?
-    let launchSites: SXNumber?
-    let testSites: SXNumber?
-    let ceo: String?
-    let cto: String?
-    let coo: String?
-    let ctoPropulsion: String?
-    let valuation: SXNumber?
-    let headquarters: Headquarters?
-    let links: Links?
-    let summary: String?
+    public let name: String?
+    public let founder: String?
+    public let founded: SXNumber?
+    public let employees: SXNumber?
+    public let vehicles: SXNumber?
+    public let launchSites: SXNumber?
+    public let testSites: SXNumber?
+    public let ceo: String?
+    public let cto: String?
+    public let coo: String?
+    public let ctoPropulsion: String?
+    public let valuation: SXNumber?
+    public let headquarters: Headquarters?
+    public let links: Links?
+    public let summary: String?
     
     enum CodingKeys: String, CodingKey {
         case name = "name"

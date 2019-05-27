@@ -10,7 +10,7 @@ import Foundation
 
 public class PressurizedCapsule: Codable {
     
-    let payloadVolume: PayloadVolume?
+    public let payloadVolume: PayloadVolume?
     
     enum CodingKeys: String, CodingKey {
         case payloadVolume = "payload_volume"

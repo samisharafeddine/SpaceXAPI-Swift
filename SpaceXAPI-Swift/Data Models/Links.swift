@@ -10,24 +10,24 @@ import Foundation
 
 public class Links: Codable {
     
-    let reddit: String?
-    let article: String?
-    let wikipedia: String?
-    let website: String?
-    let flickr: String?
-    let twitter: String?
-    let elonTwitter: String?
-    let missionPatch: String?
-    let missionPatchSmall: String?
-    let redditCampaign: String?
-    let redditLaunch: String?
-    let redditRecovery: String?
-    let redditMedia: String?
-    let presskit: String?
-    let articleLink: String?
-    let videoLink: String?
-    let youtubeID: String?
-    let flickrImages: [String]?
+    public let reddit: String?
+    public let article: String?
+    public let wikipedia: String?
+    public let website: String?
+    public let flickr: String?
+    public let twitter: String?
+    public let elonTwitter: String?
+    public let missionPatch: String?
+    public let missionPatchSmall: String?
+    public let redditCampaign: String?
+    public let redditLaunch: String?
+    public let redditRecovery: String?
+    public let redditMedia: String?
+    public let presskit: String?
+    public let articleLink: String?
+    public let videoLink: String?
+    public let youtubeID: String?
+    public let flickrImages: [String]?
     
     enum CodingKeys: String, CodingKey {
         case reddit = "reddit"

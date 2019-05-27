@@ -10,10 +10,10 @@ import Foundation
 
 public class PayloadWeight: Codable {
     
-    let id: String?
-    let name: String?
-    let kg: SXNumber?
-    let lb: SXNumber?
+    public let id: String?
+    public let name: String?
+    public let kg: SXNumber?
+    public let lb: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"

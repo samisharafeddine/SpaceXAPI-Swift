@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class SXAPIEndpoints: NSObject {
+class SXAPIEndpoints: NSObject {
     
     private static let url = "https://api.spacexdata.com/v3"
     

@@ -10,21 +10,21 @@ import Foundation
 
 public class OrbitParams: Codable {
     
-    let referenceSystem: String?
-    let regime: String?
-    let longitude: SXNumber?
-    let semiMajorAxisKM: SXNumber?
-    let eccentricity: SXNumber?
-    let periapsisKM: SXNumber?
-    let apoapsisKM: SXNumber?
-    let inclinationDeg: SXNumber?
-    let periodMin: SXNumber?
-    let lifespanYears: SXNumber?
-    let epoch: String?
-    let meanMotion: SXNumber?
-    let raan: SXNumber?
-    let argOfPericenter: SXNumber?
-    let meanAnomaly: SXNumber?
+    public let referenceSystem: String?
+    public let regime: String?
+    public let longitude: SXNumber?
+    public let semiMajorAxisKM: SXNumber?
+    public let eccentricity: SXNumber?
+    public let periapsisKM: SXNumber?
+    public let apoapsisKM: SXNumber?
+    public let inclinationDeg: SXNumber?
+    public let periodMin: SXNumber?
+    public let lifespanYears: SXNumber?
+    public let epoch: String?
+    public let meanMotion: SXNumber?
+    public let raan: SXNumber?
+    public let argOfPericenter: SXNumber?
+    public let meanAnomaly: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case referenceSystem = "reference_system"

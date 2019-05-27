@@ -10,8 +10,8 @@ import Foundation
 
 public class Trunk: Codable {
     
-    let trunkVolume: PayloadVolume?
-    let cargo: Cargo?
+    public let trunkVolume: PayloadVolume?
+    public let cargo: Cargo?
     
     enum CodingKeys: String, CodingKey {
         case trunkVolume = "trunk_volume"

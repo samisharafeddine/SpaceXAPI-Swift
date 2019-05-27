@@ -10,15 +10,15 @@ import Foundation
 
 public class LandingPad: Codable {
     
-    let id: String?
-    let fullName: String?
-    let status: String?
-    let location: Location?
-    let landingType: String?
-    let attemptedLandings: SXNumber?
-    let successfulLandings: SXNumber?
-    let wikipedia: String?
-    let details: String?
+    public let id: String?
+    public let fullName: String?
+    public let status: String?
+    public let location: Location?
+    public let landingType: String?
+    public let attemptedLandings: SXNumber?
+    public let successfulLandings: SXNumber?
+    public let wikipedia: String?
+    public let details: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"

@@ -10,8 +10,8 @@ import Foundation
 
 public class PayloadVolume: Codable {
     
-    let cubicMeters: SXNumber?
-    let cubicFeet: SXNumber?
+    public let cubicMeters: SXNumber?
+    public let cubicFeet: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case cubicMeters = "cubic_meters"

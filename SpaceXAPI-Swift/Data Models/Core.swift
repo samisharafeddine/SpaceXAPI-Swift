@@ -10,19 +10,19 @@ import Foundation
 
 public class Core: Codable {
     
-    let coreSerial: String?
-    let block: SXNumber?
-    let status: String?
-    let originalLaunch: String?
-    let originalLaunchUnix: SXNumber?
-    let missions: [Mission]?
-    let reuseCount: SXNumber?
-    let rtlsAttempts: SXNumber?
-    let rtlsLandings: SXNumber?
-    let asdsAttempts: SXNumber?
-    let asdsLandings: SXNumber?
-    let waterLanding: Bool?
-    let details: String?
+    public let coreSerial: String?
+    public let block: SXNumber?
+    public let status: String?
+    public let originalLaunch: String?
+    public let originalLaunchUnix: SXNumber?
+    public let missions: [Mission]?
+    public let reuseCount: SXNumber?
+    public let rtlsAttempts: SXNumber?
+    public let rtlsLandings: SXNumber?
+    public let asdsAttempts: SXNumber?
+    public let asdsLandings: SXNumber?
+    public let waterLanding: Bool?
+    public let details: String?
     
     enum CodingKeys: String, CodingKey {
         case coreSerial = "core_serial"

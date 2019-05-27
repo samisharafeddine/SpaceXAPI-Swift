@@ -10,7 +10,7 @@ import Foundation
 
 public class Telemetry: Codable {
     
-    let flightClub: String?
+    public let flightClub: String?
     
     enum CodingKeys: String, CodingKey {
         case flightClub = "flight_club"

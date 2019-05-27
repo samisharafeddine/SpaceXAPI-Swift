@@ -10,12 +10,12 @@ import Foundation
 
 public class Thruster: Codable {
     
-    let type: String?
-    let amount: SXNumber?
-    let pods: SXNumber?
-    let fuel1: String?
-    let fuel2: String?
-    let thrust: Thrust?
+    public let type: String?
+    public let amount: SXNumber?
+    public let pods: SXNumber?
+    public let fuel1: String?
+    public let fuel2: String?
+    public let thrust: Thrust?
     
     enum CodingKeys: String, CodingKey {
         case type = "type"

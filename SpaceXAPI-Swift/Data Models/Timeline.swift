@@ -10,42 +10,42 @@ import Foundation
 
 public class Timeline: Codable {
     
-    let webcastLiftoff: SXNumber?
-    let goForPropLoading: SXNumber?
-    let rp1Loading: SXNumber?
-    let stage1LoxLoading: SXNumber?
-    let stage2LoxLoading: SXNumber?
-    let engineChill: SXNumber?
-    let prelaunchChecks: SXNumber?
-    let propellantPressurization: SXNumber?
-    let goForLaunch: SXNumber?
-    let ignition: SXNumber?
-    let liftoff: SXNumber?
-    let maxq: SXNumber?
-    let meco: SXNumber?
-    let stageSep: SXNumber?
-    let secondStageIgnition: SXNumber?
-    let firstStageBoostbackBurn: SXNumber?
-    let firstStageEntryBurn: SXNumber?
-    let firstStageLanding: SXNumber?
-    let seco1: SXNumber?
-    let dragonSeparation: SXNumber?
-    let dragonSolarDeploy: SXNumber?
-    let dragonBayDoorDeploy: SXNumber?
-    let stage1Rp1Loading: SXNumber?
-    let stage2Rp1Loading: SXNumber?
-    let beco: SXNumber?
-    let sideCoreSep: SXNumber?
-    let sideCoreBoostback: SXNumber?
-    let centerStageSep: SXNumber?
-    let fairingDeploy: SXNumber?
-    let sideCoreEntryBurn: SXNumber?
-    let centerCoreEntryBurn: SXNumber?
-    let sideCoreLanding: SXNumber?
-    let centerCoreLanding: SXNumber?
-    let secondStageRestart: SXNumber?
-    let seco2: SXNumber?
-    let payloadDeploy: SXNumber?
+    public let webcastLiftoff: SXNumber?
+    public let goForPropLoading: SXNumber?
+    public let rp1Loading: SXNumber?
+    public let stage1LoxLoading: SXNumber?
+    public let stage2LoxLoading: SXNumber?
+    public let engineChill: SXNumber?
+    public let prelaunchChecks: SXNumber?
+    public let propellantPressurization: SXNumber?
+    public let goForLaunch: SXNumber?
+    public let ignition: SXNumber?
+    public let liftoff: SXNumber?
+    public let maxq: SXNumber?
+    public let meco: SXNumber?
+    public let stageSep: SXNumber?
+    public let secondStageIgnition: SXNumber?
+    public let firstStageBoostbackBurn: SXNumber?
+    public let firstStageEntryBurn: SXNumber?
+    public let firstStageLanding: SXNumber?
+    public let seco1: SXNumber?
+    public let dragonSeparation: SXNumber?
+    public let dragonSolarDeploy: SXNumber?
+    public let dragonBayDoorDeploy: SXNumber?
+    public let stage1Rp1Loading: SXNumber?
+    public let stage2Rp1Loading: SXNumber?
+    public let beco: SXNumber?
+    public let sideCoreSep: SXNumber?
+    public let sideCoreBoostback: SXNumber?
+    public let centerStageSep: SXNumber?
+    public let fairingDeploy: SXNumber?
+    public let sideCoreEntryBurn: SXNumber?
+    public let centerCoreEntryBurn: SXNumber?
+    public let sideCoreLanding: SXNumber?
+    public let centerCoreLanding: SXNumber?
+    public let secondStageRestart: SXNumber?
+    public let seco2: SXNumber?
+    public let payloadDeploy: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case webcastLiftoff = "webcast_liftoff"

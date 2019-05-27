@@ -10,9 +10,9 @@ import Foundation
 
 public class LaunchSite: Codable {
     
-    let siteID: String?
-    let siteName: String?
-    let siteNameLong: String?
+    public let siteID: String?
+    public let siteName: String?
+    public let siteNameLong: String?
     
     enum CodingKeys: String, CodingKey {
         case siteID = "site_id"

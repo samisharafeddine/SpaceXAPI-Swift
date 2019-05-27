@@ -10,9 +10,9 @@ import Foundation
 
 public class Payloads: Codable {
     
-    let option1: String?
-    let option2: String?
-    let compositeFairing: CompositeFairing?
+    public let option1: String?
+    public let option2: String?
+    public let compositeFairing: CompositeFairing?
     
     enum CodingKeys: String, CodingKey {
         case option1 = "option_1"

@@ -10,12 +10,12 @@ import Foundation
 
 public class RocketSecondStage: Codable {
     
-    let reusable: Bool?
-    let engines: SXNumber?
-    let fuelAmountTons: SXNumber?
-    let burnTimeSEC: SXNumber?
-    let thrust: Thrust?
-    let payloads: Payloads?
+    public let reusable: Bool?
+    public let engines: SXNumber?
+    public let fuelAmountTons: SXNumber?
+    public let burnTimeSEC: SXNumber?
+    public let thrust: Thrust?
+    public let payloads: Payloads?
     
     enum CodingKeys: String, CodingKey {
         case reusable = "reusable"

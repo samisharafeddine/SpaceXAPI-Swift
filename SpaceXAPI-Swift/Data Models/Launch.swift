@@ -10,28 +10,28 @@ import Foundation
 
 public class Launch: Codable {
     
-    let flightNumber: SXNumber?
-    let missionName: String?
-    let missionID: [String]?
-    let launchYear: String?
-    let launchDateUnix: SXNumber?
-    let launchDateUTC: String?
-    let launchDateLocal: String?
-    let isTentative: Bool?
-    let tentativeMaxPrecision: String?
-    let tbd: Bool?
-    let launchWindow: SXNumber?
-    let rocket: LaunchingRocket?
-    let ships: [String]?
-    let telemetry: Telemetry?
-    let launchSite: LaunchSite?
-    let launchSuccess: Bool?
-    let links: Links?
-    let details: String?
-    let upcoming: Bool?
-    let staticFireDateUTC: String?
-    let staticFireDateUnix: SXNumber?
-    let timeline: Timeline?
+    public let flightNumber: SXNumber?
+    public let missionName: String?
+    public let missionID: [String]?
+    public let launchYear: String?
+    public let launchDateUnix: SXNumber?
+    public let launchDateUTC: String?
+    public let launchDateLocal: String?
+    public let isTentative: Bool?
+    public let tentativeMaxPrecision: String?
+    public let tbd: Bool?
+    public let launchWindow: SXNumber?
+    public let rocket: LaunchingRocket?
+    public let ships: [String]?
+    public let telemetry: Telemetry?
+    public let launchSite: LaunchSite?
+    public let launchSuccess: Bool?
+    public let links: Links?
+    public let details: String?
+    public let upcoming: Bool?
+    public let staticFireDateUTC: String?
+    public let staticFireDateUnix: SXNumber?
+    public let timeline: Timeline?
     
     enum CodingKeys: String, CodingKey {
         case flightNumber = "flight_number"

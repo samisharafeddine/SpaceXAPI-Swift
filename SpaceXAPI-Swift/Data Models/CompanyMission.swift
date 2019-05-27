@@ -10,14 +10,14 @@ import Foundation
 
 public class CompanyMission: Codable {
     
-    let missionName: String?
-    let missionID: String?
-    let manufacturers: [String]?
-    let payloadIDS: [String]?
-    let wikipedia: String?
-    let website: String?
-    let twitter: String?
-    let missionDescription: String?
+    public let missionName: String?
+    public let missionID: String?
+    public let manufacturers: [String]?
+    public let payloadIDS: [String]?
+    public let wikipedia: String?
+    public let website: String?
+    public let twitter: String?
+    public let missionDescription: String?
     
     enum CodingKeys: String, CodingKey {
         case missionName = "mission_name"

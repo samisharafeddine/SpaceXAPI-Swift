@@ -10,10 +10,10 @@ import Foundation
 
 public class HeatShield: Codable {
     
-    let material: String?
-    let sizeMeters: SXNumber?
-    let tempDegrees: SXNumber?
-    let devPartner: String?
+    public let material: String?
+    public let sizeMeters: SXNumber?
+    public let tempDegrees: SXNumber?
+    public let devPartner: String?
     
     enum CodingKeys: String, CodingKey {
         case material = "material"

@@ -10,8 +10,8 @@ import Foundation
 
 public class Position: Codable {
     
-    let latitude: SXNumber?
-    let longitude: SXNumber?
+    public let latitude: SXNumber?
+    public let longitude: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case latitude = "latitude"

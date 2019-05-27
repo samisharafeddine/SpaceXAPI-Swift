@@ -10,29 +10,29 @@ import Foundation
 
 public class Dragon: Codable {
     
-    let id: String?
-    let name: String?
-    let type: String?
-    let active: Bool?
-    let crewCapacity: SXNumber?
-    let sidewallAngleDeg: SXNumber?
-    let orbitDurationYr: SXNumber?
-    let dryMassKg: SXNumber?
-    let dryMassLB: SXNumber?
-    let firstFlight: String?
-    let heatShield: HeatShield?
-    let thrusters: [Thruster]?
-    let launchPayloadMass: PayloadMass?
-    let launchPayloadVol: PayloadVolume?
-    let returnPayloadMass: PayloadMass?
-    let returnPayloadVol: PayloadVolume?
-    let pressurizedCapsule: PressurizedCapsule?
-    let trunk: Trunk?
-    let heightWTrunk: HeightWithTrunk?
-    let diameter: Diameter?
-    let flickrImages: [String]?
-    let wikipedia: String?
-    let dragonDescription: String?
+    public let id: String?
+    public let name: String?
+    public let type: String?
+    public let active: Bool?
+    public let crewCapacity: SXNumber?
+    public let sidewallAngleDeg: SXNumber?
+    public let orbitDurationYr: SXNumber?
+    public let dryMassKg: SXNumber?
+    public let dryMassLB: SXNumber?
+    public let firstFlight: String?
+    public let heatShield: HeatShield?
+    public let thrusters: [Thruster]?
+    public let launchPayloadMass: PayloadMass?
+    public let launchPayloadVol: PayloadVolume?
+    public let returnPayloadMass: PayloadMass?
+    public let returnPayloadVol: PayloadVolume?
+    public let pressurizedCapsule: PressurizedCapsule?
+    public let trunk: Trunk?
+    public let heightWTrunk: HeightWithTrunk?
+    public let diameter: Diameter?
+    public let flickrImages: [String]?
+    public let wikipedia: String?
+    public let dragonDescription: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"

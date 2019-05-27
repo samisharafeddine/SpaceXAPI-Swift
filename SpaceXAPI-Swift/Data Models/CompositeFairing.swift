@@ -10,8 +10,8 @@ import Foundation
 
 public class CompositeFairing: Codable {
     
-    let height: CompositeFairingHeight?
-    let diameter: Diameter?
+    public let height: CompositeFairingHeight?
+    public let diameter: Diameter?
     
     enum CodingKeys: String, CodingKey {
         case height = "height"

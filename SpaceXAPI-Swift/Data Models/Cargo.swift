@@ -10,8 +10,8 @@ import Foundation
 
 public class Cargo: Codable {
     
-    let solarArray: SXNumber?
-    let unpressurizedCargo: Bool?
+    public let solarArray: SXNumber?
+    public let unpressurizedCargo: Bool?
     
     enum CodingKeys: String, CodingKey {
         case solarArray = "solar_array"

@@ -10,31 +10,31 @@ import Foundation
 
 public class Roadster: Codable {
     
-    let name: String?
-    let launchDateUTC: String?
-    let launchDateUnix: SXNumber?
-    let launchMassKg: SXNumber?
-    let launchMassLbs: SXNumber?
-    let noradID: SXNumber?
-    let epochJd: SXNumber?
-    let orbitType: String?
-    let apoapsisAu: SXNumber?
-    let periapsisAu: SXNumber?
-    let semiMajorAxisAu: SXNumber?
-    let eccentricity: SXNumber?
-    let inclination: SXNumber?
-    let longitude: SXNumber?
-    let periapsisArg: SXNumber?
-    let periodDays: SXNumber?
-    let speedKph: SXNumber?
-    let speedMph: SXNumber?
-    let earthDistanceKM: SXNumber?
-    let earthDistanceMi: SXNumber?
-    let marsDistanceKM: SXNumber?
-    let marsDistanceMi: SXNumber?
-    let flickrImages: [String]?
-    let wikipedia: String?
-    let details: String?
+    public let name: String?
+    public let launchDateUTC: String?
+    public let launchDateUnix: SXNumber?
+    public let launchMassKg: SXNumber?
+    public let launchMassLbs: SXNumber?
+    public let noradID: SXNumber?
+    public let epochJd: SXNumber?
+    public let orbitType: String?
+    public let apoapsisAu: SXNumber?
+    public let periapsisAu: SXNumber?
+    public let semiMajorAxisAu: SXNumber?
+    public let eccentricity: SXNumber?
+    public let inclination: SXNumber?
+    public let longitude: SXNumber?
+    public let periapsisArg: SXNumber?
+    public let periodDays: SXNumber?
+    public let speedKph: SXNumber?
+    public let speedMph: SXNumber?
+    public let earthDistanceKM: SXNumber?
+    public let earthDistanceMi: SXNumber?
+    public let marsDistanceKM: SXNumber?
+    public let marsDistanceMi: SXNumber?
+    public let flickrImages: [String]?
+    public let wikipedia: String?
+    public let details: String?
     
     enum CodingKeys: String, CodingKey {
         case name = "name"

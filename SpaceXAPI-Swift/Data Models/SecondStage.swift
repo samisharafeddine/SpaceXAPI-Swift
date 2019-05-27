@@ -10,8 +10,8 @@ import Foundation
 
 public class SecondStage: Codable {
     
-    let block: SXNumber?
-    let payloads: [Payload]?
+    public let block: SXNumber?
+    public let payloads: [Payload]?
     
     enum CodingKeys: String, CodingKey {
         case block = "block"

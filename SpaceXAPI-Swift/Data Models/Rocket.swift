@@ -10,29 +10,29 @@ import Foundation
 
 public class Rocket: Codable {
     
-    let id: SXNumber?
-    let active: Bool?
-    let stages: SXNumber?
-    let boosters: SXNumber?
-    let costPerLaunch: SXNumber?
-    let successRatePct: SXNumber?
-    let firstFlight: String?
-    let country: String?
-    let company: String?
-    let height: RocketHeight?
-    let diameter: Diameter?
-    let mass: Mass?
-    let payloadWeights: [PayloadWeight]?
-    let firstStage: RocketFirstStage?
-    let secondStage: RocketSecondStage?
-    let engines: Engines?
-    let landingLegs: LandingLegs?
-    let flickrImages: [String]?
-    let wikipedia: String?
-    let rocketDescription: String?
-    let rocketID: String?
-    let rocketName: String?
-    let rocketType: String?
+    public let id: SXNumber?
+    public let active: Bool?
+    public let stages: SXNumber?
+    public let boosters: SXNumber?
+    public let costPerLaunch: SXNumber?
+    public let successRatePct: SXNumber?
+    public let firstFlight: String?
+    public let country: String?
+    public let company: String?
+    public let height: RocketHeight?
+    public let diameter: Diameter?
+    public let mass: Mass?
+    public let payloadWeights: [PayloadWeight]?
+    public let firstStage: RocketFirstStage?
+    public let secondStage: RocketSecondStage?
+    public let engines: Engines?
+    public let landingLegs: LandingLegs?
+    public let flickrImages: [String]?
+    public let wikipedia: String?
+    public let rocketDescription: String?
+    public let rocketID: String?
+    public let rocketName: String?
+    public let rocketType: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
