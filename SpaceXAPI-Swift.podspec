@@ -8,7 +8,7 @@ s.summary = "SpaceXAPI-Swift is a swift wrapper for ApaceX API created by r/Spac
 s.requires_arc = true
 
 # 2
-s.version = "1.0.0"
+s.version = "1.0.1"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }

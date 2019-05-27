@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class SpaceXAPIClient: NSObject {
+public class SpaceXAPIClient: NSObject {
     
     // MARK: - Declarations
     
