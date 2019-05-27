@@ -4,6 +4,9 @@
 ### Description
 SpaceXAPI-Swift is a wrapper for the original SpaceX API created and maintained by r/SpaceX at https://github.com/r-spacex/SpaceX-API.
 
+### Installation
+```pod 'SpaceXAPI-Swift'```
+
 ### Usage
 SpaceXAPI-Swift is very easy to use. Here's an example:
 ```swift
