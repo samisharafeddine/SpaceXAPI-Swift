@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Rocket: Codable {
+public class Rocket: Codable {
     
     let id: SXNumber?
     let active: Bool?

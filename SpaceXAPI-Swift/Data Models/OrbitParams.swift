@@ -8,7 +8,7 @@
 
 import Foundation
 
-class OrbitParams: Codable {
+public class OrbitParams: Codable {
     
     let referenceSystem: String?
     let regime: String?

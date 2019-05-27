@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PayloadMass: Codable {
+public class PayloadMass: Codable {
     
     let kg: SXNumber?
     let lb: SXNumber?

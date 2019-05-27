@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PayloadVolume: Codable {
+public class PayloadVolume: Codable {
     
     let cubicMeters: SXNumber?
     let cubicFeet: SXNumber?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Cargo: Codable {
+public class Cargo: Codable {
     
     let solarArray: SXNumber?
     let unpressurizedCargo: Bool?

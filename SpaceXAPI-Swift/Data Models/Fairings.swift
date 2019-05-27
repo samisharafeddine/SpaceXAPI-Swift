@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Fairings: Codable {
+public class Fairings: Codable {
     
     let reused: Bool?
     let recoveryAttempt: Bool?

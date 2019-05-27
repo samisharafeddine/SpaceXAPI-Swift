@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Payloads: Codable {
+public class Payloads: Codable {
     
     let option1: String?
     let option2: String?

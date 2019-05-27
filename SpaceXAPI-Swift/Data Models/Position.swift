@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Position: Codable {
+public class Position: Codable {
     
     let latitude: SXNumber?
     let longitude: SXNumber?

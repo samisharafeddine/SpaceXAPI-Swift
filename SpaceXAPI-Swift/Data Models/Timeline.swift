@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Timeline: Codable {
+public class Timeline: Codable {
     
     let webcastLiftoff: SXNumber?
     let goForPropLoading: SXNumber?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Capsule: Codable {
+public class Capsule: Codable {
     
     let capsuleSerial: String?
     let capsuleID: String?

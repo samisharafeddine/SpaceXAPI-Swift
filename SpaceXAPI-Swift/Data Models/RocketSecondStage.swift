@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RocketSecondStage: Codable {
+public class RocketSecondStage: Codable {
     
     let reusable: Bool?
     let engines: SXNumber?

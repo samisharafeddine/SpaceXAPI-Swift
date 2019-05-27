@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Core: Codable {
+public class Core: Codable {
     
     let coreSerial: String?
     let block: SXNumber?

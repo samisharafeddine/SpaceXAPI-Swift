@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Links: Codable {
+public class Links: Codable {
     
     let reddit: String?
     let article: String?

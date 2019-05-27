@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FirstStageCore: Codable {
+public class FirstStageCore: Codable {
     
     let coreSerial: String?
     let flight: SXNumber?

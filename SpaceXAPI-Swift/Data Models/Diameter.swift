@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Diameter: Codable {
+public class Diameter: Codable {
     
     let meters: SXNumber?
     let feet: SXNumber?

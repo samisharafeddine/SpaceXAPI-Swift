@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class SXRequestHandler: NSObject {
+public class SXRequestHandler: NSObject {
     
     private static let namespace = "SXRequestHandler"
     

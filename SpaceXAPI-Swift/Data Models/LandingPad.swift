@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LandingPad: Codable {
+public class LandingPad: Codable {
     
     let id: String?
     let fullName: String?

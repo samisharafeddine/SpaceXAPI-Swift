@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RocketHeight: Codable {
+public class RocketHeight: Codable {
     
     let meters: SXNumber?
     let feet: SXNumber?

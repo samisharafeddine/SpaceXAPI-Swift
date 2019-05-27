@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LaunchingRocket: Codable {
+public class LaunchingRocket: Codable {
     
     let rocketID: String?
     let rocketName: String?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HistoryEvent: Codable {
+public class HistoryEvent: Codable {
     
     let id: SXNumber?
     let title: String?

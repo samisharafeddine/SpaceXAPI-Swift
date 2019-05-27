@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Launch: Codable {
+public class Launch: Codable {
     
     let flightNumber: SXNumber?
     let missionName: String?

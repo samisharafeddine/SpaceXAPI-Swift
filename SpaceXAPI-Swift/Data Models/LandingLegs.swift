@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LandingLegs: Codable {
+public class LandingLegs: Codable {
     
     let number: SXNumber?
     let material: String?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CompositeFairing: Codable {
+public class CompositeFairing: Codable {
     
     let height: CompositeFairingHeight?
     let diameter: Diameter?

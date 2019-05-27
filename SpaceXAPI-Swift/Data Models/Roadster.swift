@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Roadster: Codable {
+public class Roadster: Codable {
     
     let name: String?
     let launchDateUTC: String?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Thrust: Codable {
+public class Thrust: Codable {
     
     let kN: SXNumber?
     let lbf: SXNumber?

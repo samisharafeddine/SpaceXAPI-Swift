@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LaunchSite: Codable {
+public class LaunchSite: Codable {
     
     let siteID: String?
     let siteName: String?

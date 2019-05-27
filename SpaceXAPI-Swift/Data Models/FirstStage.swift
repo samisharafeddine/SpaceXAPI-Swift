@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FirstStage: Codable {
+public class FirstStage: Codable {
     
     let cores: [FirstStageCore]?
     

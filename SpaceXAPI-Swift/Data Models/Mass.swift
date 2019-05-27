@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Mass: Codable {
+public class Mass: Codable {
     
     let kg: SXNumber?
     let lb: SXNumber?

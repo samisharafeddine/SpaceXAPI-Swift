@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Ship: Codable {
+public class Ship: Codable {
     
     let shipID: String?
     let shipName: String?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Trunk: Codable {
+public class Trunk: Codable {
     
     let trunkVolume: PayloadVolume?
     let cargo: Cargo?

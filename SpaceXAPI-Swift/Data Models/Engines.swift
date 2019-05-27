@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Engines: Codable {
+public class Engines: Codable {
     
     let number: SXNumber?
     let type: String?

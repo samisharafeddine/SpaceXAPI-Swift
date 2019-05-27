@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Headquarters: Codable {
+public class Headquarters: Codable {
     
     let address: String?
     let city: String?

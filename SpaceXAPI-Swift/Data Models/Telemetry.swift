@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Telemetry: Codable {
+public class Telemetry: Codable {
     
     let flightClub: String?
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Payload: Codable {
+public class Payload: Codable {
     
     let payloadID: String?
     let noradID: [SXNumber]?

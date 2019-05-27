@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HeatShield: Codable {
+public class HeatShield: Codable {
     
     let material: String?
     let sizeMeters: SXNumber?

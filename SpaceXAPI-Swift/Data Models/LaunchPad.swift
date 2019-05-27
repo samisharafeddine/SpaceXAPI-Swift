@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LaunchPad: Codable {
+public class LaunchPad: Codable {
     
     let id: SXNumber?
     let status: String?

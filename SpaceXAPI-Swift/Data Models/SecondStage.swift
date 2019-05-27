@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SecondStage: Codable {
+public class SecondStage: Codable {
     
     let block: SXNumber?
     let payloads: [Payload]?

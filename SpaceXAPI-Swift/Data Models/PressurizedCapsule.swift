@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PressurizedCapsule: Codable {
+public class PressurizedCapsule: Codable {
     
     let payloadVolume: PayloadVolume?
     

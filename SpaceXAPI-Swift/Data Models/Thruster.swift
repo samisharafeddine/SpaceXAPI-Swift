@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Thruster: Codable {
+public class Thruster: Codable {
     
     let type: String?
     let amount: SXNumber?

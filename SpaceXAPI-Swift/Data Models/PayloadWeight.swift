@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PayloadWeight: Codable {
+public class PayloadWeight: Codable {
     
     let id: String?
     let name: String?

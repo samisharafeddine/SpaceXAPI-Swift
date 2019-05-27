@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Dragon: Codable {
+public class Dragon: Codable {
     
     let id: String?
     let name: String?

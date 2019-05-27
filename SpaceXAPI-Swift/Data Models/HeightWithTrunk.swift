@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HeightWithTrunk: Codable {
+public class HeightWithTrunk: Codable {
     
     let meters: SXNumber?
     let feet: SXNumber?
