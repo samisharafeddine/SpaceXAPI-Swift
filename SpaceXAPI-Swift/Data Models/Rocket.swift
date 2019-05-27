@@ -10,12 +10,12 @@ import Foundation
 
 class Rocket: Codable {
     
-    let id: Int?
+    let id: SXNumber?
     let active: Bool?
-    let stages: Int?
-    let boosters: Int?
-    let costPerLaunch: Int?
-    let successRatePct: Int?
+    let stages: SXNumber?
+    let boosters: SXNumber?
+    let costPerLaunch: SXNumber?
+    let successRatePct: SXNumber?
     let firstFlight: String?
     let country: String?
     let company: String?
@@ -60,7 +60,7 @@ class Rocket: Codable {
         case rocketType = "rocket_type"
     }
     
-    init(id: Int?, active: Bool?, stages: Int?, boosters: Int?, costPerLaunch: Int?, successRatePct: Int?, firstFlight: String?, country: String?, company: String?, height: RocketHeight?, diameter: Diameter?, mass: Mass?, payloadWeights: [PayloadWeight]?, firstStage: RocketFirstStage?, secondStage: RocketSecondStage?, engines: Engines?, landingLegs: LandingLegs?, flickrImages: [String]?, wikipedia: String?, rocketDescription: String?, rocketID: String?, rocketName: String?, rocketType: String?) {
+    init(id: SXNumber?, active: Bool?, stages: SXNumber?, boosters: SXNumber?, costPerLaunch: SXNumber?, successRatePct: SXNumber?, firstFlight: String?, country: String?, company: String?, height: RocketHeight?, diameter: Diameter?, mass: Mass?, payloadWeights: [PayloadWeight]?, firstStage: RocketFirstStage?, secondStage: RocketSecondStage?, engines: Engines?, landingLegs: LandingLegs?, flickrImages: [String]?, wikipedia: String?, rocketDescription: String?, rocketID: String?, rocketName: String?, rocketType: String?) {
         self.id = id
         self.active = active
         self.stages = stages

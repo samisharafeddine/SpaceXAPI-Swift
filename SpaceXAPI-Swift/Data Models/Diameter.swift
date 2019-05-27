@@ -10,15 +10,15 @@ import Foundation
 
 class Diameter: Codable {
     
-    let meters: Double?
-    let feet: Int?
+    let meters: SXNumber?
+    let feet: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case meters = "meters"
         case feet = "feet"
     }
     
-    init(meters: Double?, feet: Int?) {
+    init(meters: SXNumber?, feet: SXNumber?) {
         self.meters = meters
         self.feet = feet
     }

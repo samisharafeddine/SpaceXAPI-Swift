@@ -10,7 +10,7 @@ import Foundation
 
 class Cargo: Codable {
     
-    let solarArray: Int?
+    let solarArray: SXNumber?
     let unpressurizedCargo: Bool?
     
     enum CodingKeys: String, CodingKey {
@@ -18,7 +18,7 @@ class Cargo: Codable {
         case unpressurizedCargo = "unpressurized_cargo"
     }
     
-    init(solarArray: Int?, unpressurizedCargo: Bool?) {
+    init(solarArray: SXNumber?, unpressurizedCargo: Bool?) {
         self.solarArray = solarArray
         self.unpressurizedCargo = unpressurizedCargo
     }

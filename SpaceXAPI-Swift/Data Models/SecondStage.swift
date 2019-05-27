@@ -10,7 +10,7 @@ import Foundation
 
 class SecondStage: Codable {
     
-    let block: Int?
+    let block: SXNumber?
     let payloads: [Payload]?
     
     enum CodingKeys: String, CodingKey {
@@ -18,7 +18,7 @@ class SecondStage: Codable {
         case payloads = "payloads"
     }
     
-    init(block: Int?, payloads: [Payload]?) {
+    init(block: SXNumber?, payloads: [Payload]?) {
         self.block = block
         self.payloads = payloads
     }

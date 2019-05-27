@@ -11,14 +11,14 @@ import Foundation
 class Payload: Codable {
     
     let payloadID: String?
-    let noradID: [Int]?
+    let noradID: [SXNumber]?
     let reused: Bool?
     let customers: [String]?
     let nationality: String?
     let manufacturer: String?
     let payloadType: String?
-    let payloadMassKg: Int?
-    let payloadMassLbs: Double?
+    let payloadMassKg: SXNumber?
+    let payloadMassLbs: SXNumber?
     let orbit: String?
     let orbitParams: OrbitParams?
     
@@ -36,7 +36,7 @@ class Payload: Codable {
         case orbitParams = "orbit_params"
     }
     
-    init(payloadID: String?, noradID: [Int]?, reused: Bool?, customers: [String]?, nationality: String?, manufacturer: String?, payloadType: String?, payloadMassKg: Int?, payloadMassLbs: Double?, orbit: String?, orbitParams: OrbitParams?) {
+    init(payloadID: String?, noradID: [SXNumber]?, reused: Bool?, customers: [String]?, nationality: String?, manufacturer: String?, payloadType: String?, payloadMassKg: SXNumber?, payloadMassLbs: SXNumber?, orbit: String?, orbitParams: OrbitParams?) {
         self.payloadID = payloadID
         self.noradID = noradID
         self.reused = reused

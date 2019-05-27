@@ -12,26 +12,26 @@ class Roadster: Codable {
     
     let name: String?
     let launchDateUTC: String?
-    let launchDateUnix: Int?
-    let launchMassKg: Int?
-    let launchMassLbs: Int?
-    let noradID: Int?
-    let epochJd: Double?
+    let launchDateUnix: SXNumber?
+    let launchMassKg: SXNumber?
+    let launchMassLbs: SXNumber?
+    let noradID: SXNumber?
+    let epochJd: SXNumber?
     let orbitType: String?
-    let apoapsisAu: Double?
-    let periapsisAu: Double?
-    let semiMajorAxisAu: Double?
-    let eccentricity: Double?
-    let inclination: Double?
-    let longitude: Double?
-    let periapsisArg: Double?
-    let periodDays: Double?
-    let speedKph: Double?
-    let speedMph: Double?
-    let earthDistanceKM: Double?
-    let earthDistanceMi: Double?
-    let marsDistanceKM: Double?
-    let marsDistanceMi: Double?
+    let apoapsisAu: SXNumber?
+    let periapsisAu: SXNumber?
+    let semiMajorAxisAu: SXNumber?
+    let eccentricity: SXNumber?
+    let inclination: SXNumber?
+    let longitude: SXNumber?
+    let periapsisArg: SXNumber?
+    let periodDays: SXNumber?
+    let speedKph: SXNumber?
+    let speedMph: SXNumber?
+    let earthDistanceKM: SXNumber?
+    let earthDistanceMi: SXNumber?
+    let marsDistanceKM: SXNumber?
+    let marsDistanceMi: SXNumber?
     let flickrImages: [String]?
     let wikipedia: String?
     let details: String?
@@ -64,7 +64,7 @@ class Roadster: Codable {
         case details = "details"
     }
     
-    init(name: String?, launchDateUTC: String?, launchDateUnix: Int?, launchMassKg: Int?, launchMassLbs: Int?, noradID: Int?, epochJd: Double?, orbitType: String?, apoapsisAu: Double?, periapsisAu: Double?, semiMajorAxisAu: Double?, eccentricity: Double?, inclination: Double?, longitude: Double?, periapsisArg: Double?, periodDays: Double?, speedKph: Double?, speedMph: Double?, earthDistanceKM: Double?, earthDistanceMi: Double?, marsDistanceKM: Double?, marsDistanceMi: Double?, flickrImages: [String]?, wikipedia: String?, details: String?) {
+    init(name: String?, launchDateUTC: String?, launchDateUnix: SXNumber?, launchMassKg: SXNumber?, launchMassLbs: SXNumber?, noradID: SXNumber?, epochJd: SXNumber?, orbitType: String?, apoapsisAu: SXNumber?, periapsisAu: SXNumber?, semiMajorAxisAu: SXNumber?, eccentricity: SXNumber?, inclination: SXNumber?, longitude: SXNumber?, periapsisArg: SXNumber?, periodDays: SXNumber?, speedKph: SXNumber?, speedMph: SXNumber?, earthDistanceKM: SXNumber?, earthDistanceMi: SXNumber?, marsDistanceKM: SXNumber?, marsDistanceMi: SXNumber?, flickrImages: [String]?, wikipedia: String?, details: String?) {
         self.name = name
         self.launchDateUTC = launchDateUTC
         self.launchDateUnix = launchDateUnix

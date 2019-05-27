@@ -12,8 +12,8 @@ class PayloadWeight: Codable {
     
     let id: String?
     let name: String?
-    let kg: Int?
-    let lb: Int?
+    let kg: SXNumber?
+    let lb: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -22,7 +22,7 @@ class PayloadWeight: Codable {
         case lb = "lb"
     }
     
-    init(id: String?, name: String?, kg: Int?, lb: Int?) {
+    init(id: String?, name: String?, kg: SXNumber?, lb: SXNumber?) {
         self.id = id
         self.name = name
         self.kg = kg

@@ -10,7 +10,7 @@ import Foundation
 
 class LandingLegs: Codable {
     
-    let number: Int?
+    let number: SXNumber?
     let material: String?
     
     enum CodingKeys: String, CodingKey {
@@ -18,7 +18,7 @@ class LandingLegs: Codable {
         case material = "material"
     }
     
-    init(number: Int?, material: String?) {
+    init(number: SXNumber?, material: String?) {
         self.number = number
         self.material = material
     }

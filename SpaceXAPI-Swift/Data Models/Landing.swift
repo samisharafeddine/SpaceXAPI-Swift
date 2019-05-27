@@ -12,8 +12,8 @@ class Location: Codable {
     
     let name: String?
     let region: String?
-    let latitude: Double?
-    let longitude: Double?
+    let latitude: SXNumber?
+    let longitude: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case name = "name"
@@ -22,7 +22,7 @@ class Location: Codable {
         case longitude = "longitude"
     }
     
-    init(name: String?, region: String?, latitude: Double?, longitude: Double?) {
+    init(name: String?, region: String?, latitude: SXNumber?, longitude: SXNumber?) {
         self.name = name
         self.region = region
         self.latitude = latitude

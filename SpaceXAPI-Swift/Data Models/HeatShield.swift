@@ -11,8 +11,8 @@ import Foundation
 class HeatShield: Codable {
     
     let material: String?
-    let sizeMeters: Double?
-    let tempDegrees: Int?
+    let sizeMeters: SXNumber?
+    let tempDegrees: SXNumber?
     let devPartner: String?
     
     enum CodingKeys: String, CodingKey {
@@ -22,7 +22,7 @@ class HeatShield: Codable {
         case devPartner = "dev_partner"
     }
     
-    init(material: String?, sizeMeters: Double?, tempDegrees: Int?, devPartner: String?) {
+    init(material: String?, sizeMeters: SXNumber?, tempDegrees: SXNumber?, devPartner: String?) {
         self.material = material
         self.sizeMeters = sizeMeters
         self.tempDegrees = tempDegrees

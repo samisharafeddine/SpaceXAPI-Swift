@@ -15,8 +15,8 @@ class LandingPad: Codable {
     let status: String?
     let location: Location?
     let landingType: String?
-    let attemptedLandings: Int?
-    let successfulLandings: Int?
+    let attemptedLandings: SXNumber?
+    let successfulLandings: SXNumber?
     let wikipedia: String?
     let details: String?
     
@@ -32,7 +32,7 @@ class LandingPad: Codable {
         case details = "details"
     }
     
-    init(id: String?, fullName: String?, status: String?, location: Location?, landingType: String?, attemptedLandings: Int?, successfulLandings: Int?, wikipedia: String?, details: String?) {
+    init(id: String?, fullName: String?, status: String?, location: Location?, landingType: String?, attemptedLandings: SXNumber?, successfulLandings: SXNumber?, wikipedia: String?, details: String?) {
         self.id = id
         self.fullName = fullName
         self.status = status

@@ -58,6 +58,7 @@
 		21BB6EC82299F5BF00C50CDE /* SXRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */; };
 		21BB6ECA229A077000C50CDE /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6EC9229A077000C50CDE /* Capsule.swift */; };
 		21BB6ECC229A088600C50CDE /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BB6ECB229A088600C50CDE /* Mission.swift */; };
+		21D291B7229B6615005636F7 /* SXNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D291B6229B6615005636F7 /* SXNumber.swift */; };
 		21F7FC572299EDD50090B659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC562299EDD50090B659 /* AppDelegate.swift */; };
 		21F7FC592299EDD50090B659 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC582299EDD50090B659 /* TestController.swift */; };
 		21F7FC5E2299EDD70090B659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC5D2299EDD70090B659 /* Assets.xcassets */; };
@@ -116,6 +117,7 @@
 		21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXRequestHandler.swift; sourceTree = "<group>"; };
 		21BB6EC9229A077000C50CDE /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
 		21BB6ECB229A088600C50CDE /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		21D291B6229B6615005636F7 /* SXNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXNumber.swift; sourceTree = "<group>"; };
 		21F7FC532299EDD50090B659 /* SpaceXAPI-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceXAPI-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F7FC562299EDD50090B659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21F7FC582299EDD50090B659 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211113EE229B54EE00419C3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				21D291B6229B6615005636F7 /* SXNumber.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		21BB6EC02299F3B700C50CDE /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +240,7 @@
 				21945821229A36C10093ED68 /* SXAPIEndpoints.swift */,
 				21BB6EC72299F5BF00C50CDE /* SXRequestHandler.swift */,
 				21BB6EC62299F4E600C50CDE /* Data Models */,
+				211113EE229B54EE00419C3E /* Extensions */,
 			);
 			path = "SpaceXAPI-Swift";
 			sourceTree = "<group>";
@@ -421,6 +432,7 @@
 				2111139B229AD89600419C3E /* PayloadMass.swift in Sources */,
 				211113E9229B51F400419C3E /* Roadster.swift in Sources */,
 				211113A9229ADAC100419C3E /* Cargo.swift in Sources */,
+				21D291B7229B6615005636F7 /* SXNumber.swift in Sources */,
 				21BB6EC82299F5BF00C50CDE /* SXRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

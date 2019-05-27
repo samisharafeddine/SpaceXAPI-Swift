@@ -12,19 +12,19 @@ class OrbitParams: Codable {
     
     let referenceSystem: String?
     let regime: String?
-    let longitude: Double?
-    let semiMajorAxisKM: Double?
-    let eccentricity: Double?
-    let periapsisKM: Double?
-    let apoapsisKM: Double?
-    let inclinationDeg: Double?
-    let periodMin: Double?
-    let lifespanYears: Int?
+    let longitude: SXNumber?
+    let semiMajorAxisKM: SXNumber?
+    let eccentricity: SXNumber?
+    let periapsisKM: SXNumber?
+    let apoapsisKM: SXNumber?
+    let inclinationDeg: SXNumber?
+    let periodMin: SXNumber?
+    let lifespanYears: SXNumber?
     let epoch: String?
-    let meanMotion: Double?
-    let raan: Double?
-    let argOfPericenter: Double?
-    let meanAnomaly: Double?
+    let meanMotion: SXNumber?
+    let raan: SXNumber?
+    let argOfPericenter: SXNumber?
+    let meanAnomaly: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case referenceSystem = "reference_system"
@@ -44,7 +44,7 @@ class OrbitParams: Codable {
         case meanAnomaly = "mean_anomaly"
     }
     
-    init(referenceSystem: String?, regime: String?, longitude: Double?, semiMajorAxisKM: Double?, eccentricity: Double?, periapsisKM: Double?, apoapsisKM: Double?, inclinationDeg: Double?, periodMin: Double?, lifespanYears: Int?, epoch: String?, meanMotion: Double?, raan: Double?, argOfPericenter: Double?, meanAnomaly: Double?) {
+    init(referenceSystem: String?, regime: String?, longitude: SXNumber?, semiMajorAxisKM: SXNumber?, eccentricity: SXNumber?, periapsisKM: SXNumber?, apoapsisKM: SXNumber?, inclinationDeg: SXNumber?, periodMin: SXNumber?, lifespanYears: SXNumber?, epoch: String?, meanMotion: SXNumber?, raan: SXNumber?, argOfPericenter: SXNumber?, meanAnomaly: SXNumber?) {
         self.referenceSystem = referenceSystem
         self.regime = regime
         self.longitude = longitude

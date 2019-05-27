@@ -10,15 +10,15 @@ import Foundation
 
 class Thrust: Codable {
     
-    let kN: Double?
-    let lbf: Int?
+    let kN: SXNumber?
+    let lbf: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case kN = "kN"
         case lbf = "lbf"
     }
     
-    init(kN: Double?, lbf: Int?) {
+    init(kN: SXNumber?, lbf: SXNumber?) {
         self.kN = kN
         self.lbf = lbf
     }

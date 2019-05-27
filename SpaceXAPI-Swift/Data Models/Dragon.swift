@@ -14,11 +14,11 @@ class Dragon: Codable {
     let name: String?
     let type: String?
     let active: Bool?
-    let crewCapacity: Int?
-    let sidewallAngleDeg: Int?
-    let orbitDurationYr: Int?
-    let dryMassKg: Int?
-    let dryMassLB: Int?
+    let crewCapacity: SXNumber?
+    let sidewallAngleDeg: SXNumber?
+    let orbitDurationYr: SXNumber?
+    let dryMassKg: SXNumber?
+    let dryMassLB: SXNumber?
     let firstFlight: String?
     let heatShield: HeatShield?
     let thrusters: [Thruster]?
@@ -60,7 +60,7 @@ class Dragon: Codable {
         case dragonDescription = "description"
     }
     
-    init(id: String?, name: String?, type: String?, active: Bool?, crewCapacity: Int?, sidewallAngleDeg: Int?, orbitDurationYr: Int?, dryMassKg: Int?, dryMassLB: Int?, firstFlight: String?, heatShield: HeatShield?, thrusters: [Thruster]?, launchPayloadMass: PayloadMass?, launchPayloadVol: PayloadVolume?, returnPayloadMass: PayloadMass?, returnPayloadVol: PayloadVolume?, pressurizedCapsule: PressurizedCapsule?, trunk: Trunk?, heightWTrunk: HeightWithTrunk?, diameter: Diameter?, flickrImages: [String]?, wikipedia: String?, dragonDescription: String?) {
+    init(id: String?, name: String?, type: String?, active: Bool?, crewCapacity: SXNumber?, sidewallAngleDeg: SXNumber?, orbitDurationYr: SXNumber?, dryMassKg: SXNumber?, dryMassLB: SXNumber?, firstFlight: String?, heatShield: HeatShield?, thrusters: [Thruster]?, launchPayloadMass: PayloadMass?, launchPayloadVol: PayloadVolume?, returnPayloadMass: PayloadMass?, returnPayloadVol: PayloadVolume?, pressurizedCapsule: PressurizedCapsule?, trunk: Trunk?, heightWTrunk: HeightWithTrunk?, diameter: Diameter?, flickrImages: [String]?, wikipedia: String?, dragonDescription: String?) {
         self.id = id
         self.name = name
         self.type = type

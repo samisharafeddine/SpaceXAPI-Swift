@@ -10,12 +10,12 @@ import Foundation
 
 class LaunchPad: Codable {
     
-    let id: Int?
+    let id: SXNumber?
     let status: String?
     let location: Location?
     let vehiclesLaunched: [String]?
-    let attemptedLaunches: Int?
-    let successfulLaunches: Int?
+    let attemptedLaunches: SXNumber?
+    let successfulLaunches: SXNumber?
     let wikipedia: String?
     let details: String?
     let siteID: String?
@@ -34,7 +34,7 @@ class LaunchPad: Codable {
         case siteNameLong = "site_name_long"
     }
     
-    init(id: Int?, status: String?, location: Location?, vehiclesLaunched: [String]?, attemptedLaunches: Int?, successfulLaunches: Int?, wikipedia: String?, details: String?, siteID: String?, siteNameLong: String?) {
+    init(id: SXNumber?, status: String?, location: Location?, vehiclesLaunched: [String]?, attemptedLaunches: SXNumber?, successfulLaunches: SXNumber?, wikipedia: String?, details: String?, siteID: String?, siteNameLong: String?) {
         self.id = id
         self.status = status
         self.location = location

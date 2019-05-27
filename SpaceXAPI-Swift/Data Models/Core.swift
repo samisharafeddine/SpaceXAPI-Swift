@@ -11,16 +11,16 @@ import Foundation
 class Core: Codable {
     
     let coreSerial: String?
-    let block: Int?
+    let block: SXNumber?
     let status: String?
     let originalLaunch: String?
-    let originalLaunchUnix: Int?
+    let originalLaunchUnix: SXNumber?
     let missions: [Mission]?
-    let reuseCount: Int?
-    let rtlsAttempts: Int?
-    let rtlsLandings: Int?
-    let asdsAttempts: Int?
-    let asdsLandings: Int?
+    let reuseCount: SXNumber?
+    let rtlsAttempts: SXNumber?
+    let rtlsLandings: SXNumber?
+    let asdsAttempts: SXNumber?
+    let asdsLandings: SXNumber?
     let waterLanding: Bool?
     let details: String?
     
@@ -39,7 +39,7 @@ class Core: Codable {
         case details
     }
     
-    init(coreSerial: String?, block: Int?, status: String?, originalLaunch: String?, originalLaunchUnix: Int?, missions: [Mission]?, reuseCount: Int?, rtlsAttempts: Int?, rtlsLandings: Int?, asdsAttempts: Int?, asdsLandings: Int?, waterLanding: Bool?, details: String?) {
+    init(coreSerial: String?, block: SXNumber?, status: String?, originalLaunch: String?, originalLaunchUnix: SXNumber?, missions: [Mission]?, reuseCount: SXNumber?, rtlsAttempts: SXNumber?, rtlsLandings: SXNumber?, asdsAttempts: SXNumber?, asdsLandings: SXNumber?, waterLanding: Bool?, details: String?) {
         self.coreSerial = coreSerial
         self.block = block
         self.status = status

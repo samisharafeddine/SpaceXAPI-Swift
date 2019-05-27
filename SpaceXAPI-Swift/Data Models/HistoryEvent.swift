@@ -10,11 +10,11 @@ import Foundation
 
 class HistoryEvent: Codable {
     
-    let id: Int?
+    let id: SXNumber?
     let title: String?
     let eventDateUTC: String?
-    let eventDateUnix: Int?
-    let flightNumber: Int?
+    let eventDateUnix: SXNumber?
+    let flightNumber: SXNumber?
     let details: String?
     let links: Links?
     
@@ -28,7 +28,7 @@ class HistoryEvent: Codable {
         case links = "links"
     }
     
-    init(id: Int?, title: String?, eventDateUTC: String?, eventDateUnix: Int?, flightNumber: Int?, details: String?, links: Links?) {
+    init(id: SXNumber?, title: String?, eventDateUTC: String?, eventDateUnix: SXNumber?, flightNumber: SXNumber?, details: String?, links: Links?) {
         self.id = id
         self.title = title
         self.eventDateUTC = eventDateUTC

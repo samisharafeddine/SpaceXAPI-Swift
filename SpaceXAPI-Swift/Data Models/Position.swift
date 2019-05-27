@@ -10,15 +10,15 @@ import Foundation
 
 class Position: Codable {
     
-    let latitude: Double?
-    let longitude: Double?
+    let latitude: SXNumber?
+    let longitude: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case latitude = "latitude"
         case longitude = "longitude"
     }
     
-    init(latitude: Double?, longitude: Double?) {
+    init(latitude: SXNumber?, longitude: SXNumber?) {
         self.latitude = latitude
         self.longitude = longitude
     }

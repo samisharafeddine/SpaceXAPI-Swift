@@ -10,42 +10,42 @@ import Foundation
 
 class Timeline: Codable {
     
-    let webcastLiftoff: Int?
-    let goForPropLoading: Int?
-    let rp1Loading: Int?
-    let stage1LoxLoading: Int?
-    let stage2LoxLoading: Int?
-    let engineChill: Int?
-    let prelaunchChecks: Int?
-    let propellantPressurization: Int?
-    let goForLaunch: Int?
-    let ignition: Int?
-    let liftoff: Int?
-    let maxq: Int?
-    let meco: Int?
-    let stageSep: Int?
-    let secondStageIgnition: Int?
-    let firstStageBoostbackBurn: Int?
-    let firstStageEntryBurn: Int?
-    let firstStageLanding: Int?
-    let seco1: Int?
-    let dragonSeparation: Int?
-    let dragonSolarDeploy: Int?
-    let dragonBayDoorDeploy: Int?
-    let stage1Rp1Loading: Int?
-    let stage2Rp1Loading: Int?
-    let beco: Int?
-    let sideCoreSep: Int?
-    let sideCoreBoostback: Int?
-    let centerStageSep: Int?
-    let fairingDeploy: Int?
-    let sideCoreEntryBurn: Int?
-    let centerCoreEntryBurn: Int?
-    let sideCoreLanding: Int?
-    let centerCoreLanding: Int?
-    let secondStageRestart: Int?
-    let seco2: Int?
-    let payloadDeploy: Int?
+    let webcastLiftoff: SXNumber?
+    let goForPropLoading: SXNumber?
+    let rp1Loading: SXNumber?
+    let stage1LoxLoading: SXNumber?
+    let stage2LoxLoading: SXNumber?
+    let engineChill: SXNumber?
+    let prelaunchChecks: SXNumber?
+    let propellantPressurization: SXNumber?
+    let goForLaunch: SXNumber?
+    let ignition: SXNumber?
+    let liftoff: SXNumber?
+    let maxq: SXNumber?
+    let meco: SXNumber?
+    let stageSep: SXNumber?
+    let secondStageIgnition: SXNumber?
+    let firstStageBoostbackBurn: SXNumber?
+    let firstStageEntryBurn: SXNumber?
+    let firstStageLanding: SXNumber?
+    let seco1: SXNumber?
+    let dragonSeparation: SXNumber?
+    let dragonSolarDeploy: SXNumber?
+    let dragonBayDoorDeploy: SXNumber?
+    let stage1Rp1Loading: SXNumber?
+    let stage2Rp1Loading: SXNumber?
+    let beco: SXNumber?
+    let sideCoreSep: SXNumber?
+    let sideCoreBoostback: SXNumber?
+    let centerStageSep: SXNumber?
+    let fairingDeploy: SXNumber?
+    let sideCoreEntryBurn: SXNumber?
+    let centerCoreEntryBurn: SXNumber?
+    let sideCoreLanding: SXNumber?
+    let centerCoreLanding: SXNumber?
+    let secondStageRestart: SXNumber?
+    let seco2: SXNumber?
+    let payloadDeploy: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case webcastLiftoff = "webcast_liftoff"
@@ -86,7 +86,7 @@ class Timeline: Codable {
         case payloadDeploy = "payload_deploy"
     }
     
-    init(webcastLiftoff: Int?, goForPropLoading: Int?, rp1Loading: Int?, stage1LoxLoading: Int?, stage2LoxLoading: Int?, engineChill: Int?, prelaunchChecks: Int?, propellantPressurization: Int?, goForLaunch: Int?, ignition: Int?, liftoff: Int?, maxq: Int?, meco: Int?, stageSep: Int?, secondStageIgnition: Int?, firstStageBoostbackBurn: Int?, firstStageEntryBurn: Int?, firstStageLanding: Int?, seco1: Int?, dragonSeparation: Int?, dragonSolarDeploy: Int?, dragonBayDoorDeploy: Int?, stage1Rp1Loading: Int?, stage2Rp1Loading: Int?, beco: Int?, sideCoreSep: Int?, sideCoreBoostback: Int?, centerStageSep: Int?, fairingDeploy: Int?, sideCoreEntryBurn: Int?, centerCoreEntryBurn: Int?, sideCoreLanding: Int?, centerCoreLanding: Int?, secondStageRestart: Int?, seco2: Int?, payloadDeploy: Int?) {
+    init(webcastLiftoff: SXNumber?, goForPropLoading: SXNumber?, rp1Loading: SXNumber?, stage1LoxLoading: SXNumber?, stage2LoxLoading: SXNumber?, engineChill: SXNumber?, prelaunchChecks: SXNumber?, propellantPressurization: SXNumber?, goForLaunch: SXNumber?, ignition: SXNumber?, liftoff: SXNumber?, maxq: SXNumber?, meco: SXNumber?, stageSep: SXNumber?, secondStageIgnition: SXNumber?, firstStageBoostbackBurn: SXNumber?, firstStageEntryBurn: SXNumber?, firstStageLanding: SXNumber?, seco1: SXNumber?, dragonSeparation: SXNumber?, dragonSolarDeploy: SXNumber?, dragonBayDoorDeploy: SXNumber?, stage1Rp1Loading: SXNumber?, stage2Rp1Loading: SXNumber?, beco: SXNumber?, sideCoreSep: SXNumber?, sideCoreBoostback: SXNumber?, centerStageSep: SXNumber?, fairingDeploy: SXNumber?, sideCoreEntryBurn: SXNumber?, centerCoreEntryBurn: SXNumber?, sideCoreLanding: SXNumber?, centerCoreLanding: SXNumber?, secondStageRestart: SXNumber?, seco2: SXNumber?, payloadDeploy: SXNumber?) {
         self.webcastLiftoff = webcastLiftoff
         self.goForPropLoading = goForPropLoading
         self.rp1Loading = rp1Loading

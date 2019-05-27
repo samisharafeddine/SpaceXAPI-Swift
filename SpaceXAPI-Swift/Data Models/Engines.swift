@@ -10,16 +10,16 @@ import Foundation
 
 class Engines: Codable {
     
-    let number: Int?
+    let number: SXNumber?
     let type: String?
     let version: String?
     let layout: String?
-    let engineLossMax: Int?
+    let engineLossMax: SXNumber?
     let propellant1: String?
     let propellant2: String?
     let thrustSeaLevel: Thrust?
     let thrustVacuum: Thrust?
-    let thrustToWeight: Double?
+    let thrustToWeight: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case number = "number"
@@ -34,7 +34,7 @@ class Engines: Codable {
         case thrustToWeight = "thrust_to_weight"
     }
     
-    init(number: Int?, type: String?, version: String?, layout: String?, engineLossMax: Int?, propellant1: String?, propellant2: String?, thrustSeaLevel: Thrust?, thrustVacuum: Thrust?, thrustToWeight: Double?) {
+    init(number: SXNumber?, type: String?, version: String?, layout: String?, engineLossMax: SXNumber?, propellant1: String?, propellant2: String?, thrustSeaLevel: Thrust?, thrustVacuum: Thrust?, thrustToWeight: SXNumber?) {
         self.number = number
         self.type = type
         self.version = version

@@ -14,12 +14,12 @@ class Capsule: Codable {
     let capsuleID: String?
     let status: String?
     let originalLaunch: String?
-    let originalLaunchUnix: Int?
+    let originalLaunchUnix: SXNumber?
     let missions: [Mission]?
-    let landings: Int?
+    let landings: SXNumber?
     let type: String?
     let details: String?
-    let reuseCount: Int?
+    let reuseCount: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case capsuleSerial = "capsule_serial"
@@ -31,7 +31,7 @@ class Capsule: Codable {
         case reuseCount = "reuse_count"
     }
     
-    init(capsuleSerial: String?, capsuleID: String?, status: String?, originalLaunch: String?, originalLaunchUnix: Int?, missions: [Mission]?, landings: Int?, type: String?, details: String?, reuseCount: Int?) {
+    init(capsuleSerial: String?, capsuleID: String?, status: String?, originalLaunch: String?, originalLaunchUnix: SXNumber?, missions: [Mission]?, landings: SXNumber?, type: String?, details: String?, reuseCount: SXNumber?) {
         self.capsuleSerial = capsuleSerial
         self.capsuleID = capsuleID
         self.status = status

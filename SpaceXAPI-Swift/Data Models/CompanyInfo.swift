@@ -12,16 +12,16 @@ class CompanyInfo: Codable {
     
     let name: String?
     let founder: String?
-    let founded: Int?
-    let employees: Int?
-    let vehicles: Int?
-    let launchSites: Int?
-    let testSites: Int?
+    let founded: SXNumber?
+    let employees: SXNumber?
+    let vehicles: SXNumber?
+    let launchSites: SXNumber?
+    let testSites: SXNumber?
     let ceo: String?
     let cto: String?
     let coo: String?
     let ctoPropulsion: String?
-    let valuation: Int?
+    let valuation: SXNumber?
     let headquarters: Headquarters?
     let links: Links?
     let summary: String?
@@ -44,7 +44,7 @@ class CompanyInfo: Codable {
         case summary = "summary"
     }
     
-    init(name: String?, founder: String?, founded: Int?, employees: Int?, vehicles: Int?, launchSites: Int?, testSites: Int?, ceo: String?, cto: String?, coo: String?, ctoPropulsion: String?, valuation: Int?, headquarters: Headquarters?, links: Links?, summary: String?) {
+    init(name: String?, founder: String?, founded: SXNumber?, employees: SXNumber?, vehicles: SXNumber?, launchSites: SXNumber?, testSites: SXNumber?, ceo: String?, cto: String?, coo: String?, ctoPropulsion: String?, valuation: SXNumber?, headquarters: Headquarters?, links: Links?, summary: String?) {
         self.name = name
         self.founder = founder
         self.founded = founded

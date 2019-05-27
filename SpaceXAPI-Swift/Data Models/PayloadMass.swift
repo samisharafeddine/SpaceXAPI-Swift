@@ -10,15 +10,15 @@ import Foundation
 
 class PayloadMass: Codable {
     
-    let kg: Int?
-    let lb: Int?
+    let kg: SXNumber?
+    let lb: SXNumber?
     
     enum CodingKeys: String, CodingKey {
         case kg = "kg"
         case lb = "lb"
     }
     
-    init(kg: Int?, lb: Int?) {
+    init(kg: SXNumber?, lb: SXNumber?) {
         self.kg = kg
         self.lb = lb
     }

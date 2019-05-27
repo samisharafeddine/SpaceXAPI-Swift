@@ -11,8 +11,8 @@ import Foundation
 class FirstStageCore: Codable {
     
     let coreSerial: String?
-    let flight: Int?
-    let block: Int?
+    let flight: SXNumber?
+    let block: SXNumber?
     let gridfins: Bool?
     let legs: Bool?
     let reused: Bool?
@@ -34,7 +34,7 @@ class FirstStageCore: Codable {
         case landingVehicle = "landing_vehicle"
     }
     
-    init(coreSerial: String?, flight: Int?, block: Int?, gridfins: Bool?, legs: Bool?, reused: Bool?, landSuccess: Bool?, landingIntent: Bool?, landingType: String?, landingVehicle: String?) {
+    init(coreSerial: String?, flight: SXNumber?, block: SXNumber?, gridfins: Bool?, legs: Bool?, reused: Bool?, landSuccess: Bool?, landingIntent: Bool?, landingType: String?, landingVehicle: String?) {
         self.coreSerial = coreSerial
         self.flight = flight
         self.block = block

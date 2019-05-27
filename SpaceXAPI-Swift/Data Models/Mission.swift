@@ -11,9 +11,9 @@ import Foundation
 class Mission: Codable {
     
     let name: String?
-    let flight: Int?
+    let flight: SXNumber?
     
-    init(name: String?, flight: Int?) {
+    init(name: String?, flight: SXNumber?) {
         self.name = name
         self.flight = flight
     }

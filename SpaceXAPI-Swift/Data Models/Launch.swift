@@ -10,17 +10,17 @@ import Foundation
 
 class Launch: Codable {
     
-    let flightNumber: Int?
+    let flightNumber: SXNumber?
     let missionName: String?
     let missionID: [String]?
     let launchYear: String?
-    let launchDateUnix: Int?
+    let launchDateUnix: SXNumber?
     let launchDateUTC: String?
     let launchDateLocal: String?
     let isTentative: Bool?
     let tentativeMaxPrecision: String?
     let tbd: Bool?
-    let launchWindow: Int?
+    let launchWindow: SXNumber?
     let rocket: LaunchingRocket?
     let ships: [String]?
     let telemetry: Telemetry?
@@ -30,7 +30,7 @@ class Launch: Codable {
     let details: String?
     let upcoming: Bool?
     let staticFireDateUTC: String?
-    let staticFireDateUnix: Int?
+    let staticFireDateUnix: SXNumber?
     let timeline: Timeline?
     
     enum CodingKeys: String, CodingKey {
@@ -58,7 +58,7 @@ class Launch: Codable {
         case timeline = "timeline"
     }
     
-    init(flightNumber: Int?, missionName: String?, missionID: [String]?, launchYear: String?, launchDateUnix: Int?, launchDateUTC: String?, launchDateLocal: String?, isTentative: Bool?, tentativeMaxPrecision: String?, tbd: Bool?, launchWindow: Int?, rocket: LaunchingRocket?, ships: [String]?, telemetry: Telemetry?, launchSite: LaunchSite?, launchSuccess: Bool?, links: Links?, details: String?, upcoming: Bool?, staticFireDateUTC: String?, staticFireDateUnix: Int?, timeline: Timeline?) {
+    init(flightNumber: SXNumber?, missionName: String?, missionID: [String]?, launchYear: String?, launchDateUnix: SXNumber?, launchDateUTC: String?, launchDateLocal: String?, isTentative: Bool?, tentativeMaxPrecision: String?, tbd: Bool?, launchWindow: SXNumber?, rocket: LaunchingRocket?, ships: [String]?, telemetry: Telemetry?, launchSite: LaunchSite?, launchSuccess: Bool?, links: Links?, details: String?, upcoming: Bool?, staticFireDateUTC: String?, staticFireDateUnix: SXNumber?, timeline: Timeline?) {
         self.flightNumber = flightNumber
         self.missionName = missionName
         self.missionID = missionID

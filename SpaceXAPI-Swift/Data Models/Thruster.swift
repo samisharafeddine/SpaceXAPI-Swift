@@ -11,8 +11,8 @@ import Foundation
 class Thruster: Codable {
     
     let type: String?
-    let amount: Int?
-    let pods: Int?
+    let amount: SXNumber?
+    let pods: SXNumber?
     let fuel1: String?
     let fuel2: String?
     let thrust: Thrust?
@@ -26,7 +26,7 @@ class Thruster: Codable {
         case thrust = "thrust"
     }
     
-    init(type: String?, amount: Int?, pods: Int?, fuel1: String?, fuel2: String?, thrust: Thrust?) {
+    init(type: String?, amount: SXNumber?, pods: SXNumber?, fuel1: String?, fuel2: String?, thrust: Thrust?) {
         self.type = type
         self.amount = amount
         self.pods = pods

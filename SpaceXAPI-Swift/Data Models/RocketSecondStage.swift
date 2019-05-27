@@ -11,9 +11,9 @@ import Foundation
 class RocketSecondStage: Codable {
     
     let reusable: Bool?
-    let engines: Int?
-    let fuelAmountTons: Int?
-    let burnTimeSEC: Int?
+    let engines: SXNumber?
+    let fuelAmountTons: SXNumber?
+    let burnTimeSEC: SXNumber?
     let thrust: Thrust?
     let payloads: Payloads?
     
@@ -26,7 +26,7 @@ class RocketSecondStage: Codable {
         case payloads = "payloads"
     }
     
-    init(reusable: Bool?, engines: Int?, fuelAmountTons: Int?, burnTimeSEC: Int?, thrust: Thrust?, payloads: Payloads?) {
+    init(reusable: Bool?, engines: SXNumber?, fuelAmountTons: SXNumber?, burnTimeSEC: SXNumber?, thrust: Thrust?, payloads: Payloads?) {
         self.reusable = reusable
         self.engines = engines
         self.fuelAmountTons = fuelAmountTons
